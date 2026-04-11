@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-12",
+  "date": "2026-04-11",
   "npcs": [
     {
       "npc_name": "아즈사",
@@ -93,9 +93,7 @@
     }
   ],
   "validation": {
-    "checked": true,
-    "ok": true,
-    "mismatches": []
+    "checked": false
   },
   "live_meta": {
     "verify_status": 1,
