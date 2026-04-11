@@ -49,7 +49,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install protobuf python-snappy
+          python -m pip install protobuf python-snappy grpcio-tools
+
+      - name: Generate protobuf modules
+        run: |
+          python -m grpc_tools.protoc -I of-ps/proto --python_out=of-ps/proto of-ps/proto/net.proto
 
       - name: Refresh daily jobs
         run: python -m AutoShopGather.watch_daily_jobs_refresh

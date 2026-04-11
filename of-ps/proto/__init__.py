@@ -1,9 +1,17 @@
+import importlib
 import sys
-import types
-from . import net_pb2
 
-_overfield = types.ModuleType("proto.OverField_pb2")
-_overfield.__package__ = "proto"
-_overfield.__file__ = __file__
 
-sys.modules["proto.OverField_pb2"] = net_pb2
+def _load_net_pb2():
+    module = importlib.import_module(".net_pb2", __name__)
+    sys.modules.setdefault("proto.OverField_pb2", module)
+    return module
+
+
+def __getattr__(name):
+    if name in {"net_pb2", "OverField_pb2"}:
+        return _load_net_pb2()
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")
+
+
+__all__ = ["net_pb2", "OverField_pb2"]
