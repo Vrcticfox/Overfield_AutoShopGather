@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     env:
+      PYTHONPATH: ${{ github.workspace }}
       OF_HOST: ${{ secrets.OF_HOST }}
       OF_PORT: ${{ secrets.OF_PORT }}
       OF_SDK_UID: ${{ secrets.OF_SDK_UID }}
@@ -51,7 +52,7 @@ jobs:
           python -m pip install protobuf python-snappy
 
       - name: Refresh daily jobs
-        run: python AutoShopGather/watch_daily_jobs_refresh.py
+        run: python -m AutoShopGather.watch_daily_jobs_refresh
 
       - name: Commit refreshed JSON
         run: |
