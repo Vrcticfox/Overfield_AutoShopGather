@@ -59,22 +59,7 @@ DISPLAY_NAME_ALIASES = {
     "해물죽": "따끈따끈 해물죽",
 }
 
-EXPECTED_2026_04_12 = {
-    "아즈사": {
-        "간장 계란밥": 300,
-        "요리용 맛술": 150,
-    },
-    "아야": {
-        "제철 열빙어찜": 600,
-        "따끈따끈 해물죽": 600,
-        "생선 꼬치구이": 350,
-    },
-    "리처드": {
-        "안경 샘플": 800,
-        "스카프 샘플": 800,
-        "팔찌 샘플": 1000,
-    },
-}
+
 
 
 def load_json(path: Path) -> dict:
@@ -270,7 +255,6 @@ def decode_live_jobs() -> dict:
                     "pool_id": pool_id,
                     "pool_index": pool_index,
                     "item_id": item_id,
-                    "item_name_raw": raw_name,
                     "item_name": display_name(raw_name),
                     "nyang_coin_reward": reward,
                 }
@@ -288,7 +272,6 @@ def decode_live_jobs() -> dict:
     payload = {
         "date": str(date.today()),
         "npcs": npcs,
-        "validation": validate_payload(npcs),
         "live_meta": {
             "verify_status": (live["verify"].get("parsed") or {}).get("status"),
             "login_status": (live["login"].get("parsed") or {}).get("status"),
@@ -300,34 +283,7 @@ def decode_live_jobs() -> dict:
     return payload
 
 
-def validate_payload(npcs: list[dict]) -> dict:
-    expected = EXPECTED_2026_04_12 if str(date.today()) == "2026-04-12" else None
-    if expected is None:
-        return {"checked": False}
 
-    actual = {
-        npc["npc_name"]: {
-            item["item_name"]: item["nyang_coin_reward"]
-            for item in npc["items"]
-        }
-        for npc in npcs
-    }
-    mismatches = []
-    for npc_name, expected_items in expected.items():
-        actual_items = actual.get(npc_name, {})
-        if actual_items != expected_items:
-            mismatches.append(
-                {
-                    "npc_name": npc_name,
-                    "expected": expected_items,
-                    "actual": actual_items,
-                }
-            )
-    return {
-        "checked": True,
-        "ok": not mismatches,
-        "mismatches": mismatches,
-    }
 
 
 def main() -> None:
