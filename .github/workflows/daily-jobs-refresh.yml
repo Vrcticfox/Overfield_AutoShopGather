@@ -4,6 +4,15 @@ on:
   schedule:
     - cron: "55 14 * * *"
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode"
+        required: true
+        default: immediate
+        type: choice
+        options:
+          - immediate
+          - watch
 
 permissions:
   contents: write
@@ -37,6 +46,12 @@ jobs:
       OF_OS_VER: ${{ secrets.OF_OS_VER }}
       OF_LANGUAGE: ${{ secrets.OF_LANGUAGE }}
       OF_OS: ${{ secrets.OF_OS }}
+      PUBLIC_REPO_OWNER: Vrcticfox
+      PUBLIC_REPO_NAME: ExternalResources
+      PUBLIC_REPO_BRANCH: main
+      PUBLIC_REPO_TARGET_DIR: overfield/gatheredDaily
+      PUBLIC_REPO_JSON_NAME: live_daily_jobs.json
+      PUBLIC_REPO_PAT: ${{ secrets.PUBLIC_REPO_PAT }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -51,19 +66,70 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install protobuf python-snappy grpcio-tools
 
+      - name: Download game resource data
+        run: |
+          curl -L "https://github.com/byzp/of-ps/releases/latest/download/resources.zip" -o /tmp/of-ps-resources.zip
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          target = Path("of-ps/resources")
+          target.mkdir(parents=True, exist_ok=True)
+          with ZipFile("/tmp/of-ps-resources.zip") as zf:
+              zf.extractall(target)
+          print("Extracted resources.zip into", target)
+          PY
+
       - name: Generate protobuf modules
         run: |
           python -m grpc_tools.protoc -I of-ps/proto --python_out=of-ps/proto of-ps/proto/net.proto
 
+      - name: Resolve run mode
+        id: resolve_mode
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "mode=watch" >> "$GITHUB_OUTPUT"
+          else
+            echo "mode=${{ github.event.inputs.mode }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate required secrets
+        run: |
+          missing=0
+          for key in OF_SDK_UID OF_LOGIN_TOKEN OF_DEVICE_UUID OF_IP; do
+            value="${!key}"
+            if [ -z "$value" ]; then
+              echo "[missing] $key"
+              missing=1
+            else
+              echo "[ok] $key is present"
+            fi
+          done
+
+          if [ "$missing" -ne 0 ]; then
+            echo "Required secrets are missing. Add them as Repository secrets, not only Environment secrets."
+            exit 1
+          fi
+
       - name: Refresh daily jobs
-        run: python -m AutoShopGather.watch_daily_jobs_refresh
+        run: |
+          echo "run mode: ${{ steps.resolve_mode.outputs.mode }}"
+          if [ "${{ steps.resolve_mode.outputs.mode }}" = "immediate" ]; then
+            python -m AutoShopGather.export_live_daily_jobs
+          else
+            python -m AutoShopGather.watch_daily_jobs_refresh
+          fi
 
       - name: Commit refreshed JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add AutoShopGather/output/live_daily_jobs.json
-          git add AutoShopGather/output/live_daily_jobs_refresh_state.json
+          if [ -f AutoShopGather/output/live_daily_jobs.json ]; then
+            git add AutoShopGather/output/live_daily_jobs.json
+          fi
+          if [ -f AutoShopGather/output/live_daily_jobs_refresh_state.json ]; then
+            git add AutoShopGather/output/live_daily_jobs_refresh_state.json
+          fi
           if [ -d AutoShopGather/output/archive ]; then
             git add AutoShopGather/output/archive
           fi
@@ -73,3 +139,38 @@ jobs:
           fi
           git commit -m "Update live daily jobs"
           git push
+
+      - name: Publish JSON to public repo
+        run: |
+          if [ -z "$PUBLIC_REPO_PAT" ]; then
+            echo "PUBLIC_REPO_PAT secret is missing."
+            exit 1
+          fi
+
+          SRC_JSON="AutoShopGather/output/live_daily_jobs.json"
+          if [ ! -f "$SRC_JSON" ]; then
+            echo "Source JSON not found: $SRC_JSON"
+            exit 1
+          fi
+
+          TMP_DIR="$(mktemp -d)"
+          trap 'rm -rf "$TMP_DIR"' EXIT
+
+          git clone "https://x-access-token:${PUBLIC_REPO_PAT}@github.com/${PUBLIC_REPO_OWNER}/${PUBLIC_REPO_NAME}.git" "$TMP_DIR/public"
+          cd "$TMP_DIR/public"
+          git checkout "$PUBLIC_REPO_BRANCH"
+
+          mkdir -p "$PUBLIC_REPO_TARGET_DIR"
+          cp "${GITHUB_WORKSPACE}/${SRC_JSON}" "${PUBLIC_REPO_TARGET_DIR}/${PUBLIC_REPO_JSON_NAME}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${PUBLIC_REPO_TARGET_DIR}/${PUBLIC_REPO_JSON_NAME}"
+
+          if git diff --cached --quiet; then
+            echo "No public JSON changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update overfield daily jobs JSON"
+          git push origin "$PUBLIC_REPO_BRANCH"

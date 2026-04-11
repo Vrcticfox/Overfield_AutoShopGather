@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 from datetime import date
 from pathlib import Path
@@ -29,6 +30,21 @@ from AutoShopGather.live_daily_job_probe import (
 
 RESOURCES_DIR = VENDOR_ROOT / "resources" / "data"
 OUTPUT_PATH = REPO_ROOT / "AutoShopGather" / "output" / "live_daily_jobs.json"
+
+DEFAULT_ENV = {
+    "OF_HOST": "158.179.182.190",
+    "OF_PORT": "11001",
+    "OF_ACCOUNT_TYPE": "16666",
+    "OF_CLIENT_VERSION": "2026-01-28-16-52-36",
+    "OF_RESOURCE_VERSION": "2026-04-10-17-44-11",
+    "OF_VERSION_NUMBER": "a3e115f690751be4da7d3ab41728568c",
+    "OF_DEVICE_MODEL": "MS-7C82 (Micro-Star International Co., Ltd.)",
+    "OF_NETWORK": "wifi",
+    "OF_OS_NAME": "windows",
+    "OF_OS_VER": "Windows 10  (10.0.19045) 64bit",
+    "OF_LANGUAGE": "4",
+    "OF_OS": "0",
+}
 
 NPC_BY_SHOP_ID = {
     2100001: "아즈사",
@@ -148,7 +164,11 @@ def display_name(raw_name: str) -> str:
 
 def build_env() -> dict:
     env_path = REPO_ROOT / ".overfield-live.env"
-    env = load_env_file(env_path)
+    env = dict(os.environ)
+    env.update(load_env_file(env_path))
+    for key, value in DEFAULT_ENV.items():
+        if not env.get(key):
+            env[key] = value
     env = apply_pcsdkui_fallbacks(REPO_ROOT, env)
     env = apply_local_log_fallbacks(env)
     return env

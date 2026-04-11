@@ -213,6 +213,8 @@ def load_player_log_state() -> dict:
 
 def load_env_file(path: Path) -> dict:
     env = {}
+    if not path.exists():
+        return env
     for raw_line in path.read_text(encoding="utf-8").splitlines():
         line = raw_line.strip()
         if not line or line.startswith("#") or "=" not in line:
