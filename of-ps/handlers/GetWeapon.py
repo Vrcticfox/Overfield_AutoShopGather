@@ -1,0 +1,38 @@
+from network.packet_handler import PacketHandler, packet_handler
+from network.msg_id import MsgId
+import logging
+
+from proto.net_pb2 import (
+    GetWeaponReq,
+    GetWeaponRsp,
+    StatusCode,
+    ItemDetail,
+    EBagItemTag,
+)
+
+import utils.db as db
+
+logger = logging.getLogger(__name__)
+
+
+@packet_handler(MsgId.GetWeaponReq)
+class Handler(PacketHandler):
+    def handle(self, session, data: bytes, packet_id: int):
+        req = GetWeaponReq()
+        req.ParseFromString(data)
+
+        rsp = GetWeaponRsp()
+        rsp.status = StatusCode.StatusCode_OK
+
+        item_blobs = db.get_item_detail(session.player_id, table="items_s")
+        weapon_count = 0
+        for blob in item_blobs:
+            item_detail = ItemDetail()
+            item_detail.ParseFromString(blob)
+            if item_detail.main_item.item_tag == EBagItemTag.EBagItemTag_Weapon:
+                rsp.weapons.append(item_detail.main_item.weapon)
+                weapon_count += 1
+        rsp.total_num = weapon_count
+        rsp.end_index = weapon_count
+
+        session.send(MsgId.GetWeaponRsp, rsp, packet_id)  # 获取武器列表 1517 1518

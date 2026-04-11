@@ -1,0 +1,72 @@
+from network.packet_handler import PacketHandler, packet_handler
+from network.msg_id import MsgId
+import logging
+
+from proto.net_pb2 import (
+    FriendHandleReq,
+    FriendHandleRsp,
+    FriendHandleNotice,
+    StatusCode,
+    FriendHandleType,
+)
+
+import utils.db as db
+from server.scene_data import get_session
+
+logger = logging.getLogger(__name__)
+
+
+@packet_handler(MsgId.FriendHandleReq)
+class Handler(PacketHandler):
+    def handle(self, session, data: bytes, packet_id: int):
+        req = FriendHandleReq()
+        req.ParseFromString(data)
+
+        rsp = FriendHandleRsp()
+        rsp.status = StatusCode.StatusCode_OK
+
+        stat = db.get_friend_info(session.player_id, req.player_id, "friend_status")[0]
+
+        if stat != None:
+            match stat:
+                case 0:  # 非好友
+                    rsp.type = StatusCode.StatusCode_FRIEND_NOT_APPLY
+                case 1:  # 已发过申请
+                    rsp1 = FriendHandleNotice()
+                    rsp1.status = StatusCode.StatusCode_OK
+                    if req.is_agree:
+                        # 双方添加好友
+                        db.set_friend_info(
+                            req.player_id, session.player_id, "friend_status", 2
+                        )
+                        db.set_friend_info(
+                            session.player_id, req.player_id, "friend_status", 2
+                        )
+
+                        rsp1.type = FriendHandleType.FriendHandleType_ADD
+                        rsp1.target_player_id = req.player_id
+                        session.send(MsgId.FriendHandleNotice, rsp1, 0)
+                        for s in get_session():
+                            if s.player_id == req.player_id:
+                                rsp1.target_player_id = session.player_id
+                                s.send(MsgId.FriendHandleNotice, rsp1, 0)
+                                break
+                    else:
+                        db.set_friend_info(
+                            session.player_id, req.player_id, "friend_status", 0
+                        )
+                        # 对方不需要知道被拒绝
+                        rsp1.type = FriendHandleType.FriendHandleType_DEL
+                        rsp1.target_player_id = req.player_id
+                        session.send(MsgId.FriendHandleNotice, rsp1, 0)
+                case 2 | 3:  # 好友/黑名单
+                    if req.is_agree:
+                        rsp.status = StatusCode.StatusCode_FRIEND_NOT_APPLY
+                    else:
+                        rsp1 = FriendHandleNotice()
+                        rsp1.status = StatusCode.StatusCode_OK
+                        rsp1.type = FriendHandleType.FriendHandleType_DEL
+                        rsp1.target_player_id = req.player_id
+                        session.send(MsgId.FriendHandleNotice, rsp1, 0)
+
+        session.send(MsgId.FriendHandleRsp, rsp, packet_id)
