@@ -1,0 +1,54 @@
+{
+  "date": "2026-04-12",
+  "timezone": "Asia/Seoul",
+  "purpose": "Ground-truth fixture for validating daily NPC job extraction against live server data.",
+  "npcs": [
+    {
+      "npc_name_ko": "리처드",
+      "expected_items": [
+        {
+          "item_name_ko": "안경 샘플",
+          "nyang_coin_reward": 800
+        },
+        {
+          "item_name_ko": "스카프 샘플",
+          "nyang_coin_reward": 800
+        },
+        {
+          "item_name_ko": "팔찌 샘플",
+          "nyang_coin_reward": 1000
+        }
+      ]
+    },
+    {
+      "npc_name_ko": "아즈사",
+      "expected_items": [
+        {
+          "item_name_ko": "간장 계란밥",
+          "nyang_coin_reward": 300
+        },
+        {
+          "item_name_ko": "요리용 맛술",
+          "nyang_coin_reward": 150
+        }
+      ]
+    },
+    {
+      "npc_name_ko": "아야",
+      "expected_items": [
+        {
+          "item_name_ko": "제철 열빙어찜",
+          "nyang_coin_reward": 600
+        },
+        {
+          "item_name_ko": "따끈따끈 해물죽",
+          "nyang_coin_reward": 600
+        },
+        {
+          "item_name_ko": "생선 꼬치구이",
+          "nyang_coin_reward": 350
+        }
+      ]
+    }
+  ]
+}

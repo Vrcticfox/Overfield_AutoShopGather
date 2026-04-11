@@ -1,0 +1,70 @@
+name: Daily Jobs Refresh
+
+on:
+  schedule:
+    - cron: "55 14 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-jobs-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      OF_HOST: ${{ secrets.OF_HOST }}
+      OF_PORT: ${{ secrets.OF_PORT }}
+      OF_SDK_UID: ${{ secrets.OF_SDK_UID }}
+      OF_LOGIN_TOKEN: ${{ secrets.OF_LOGIN_TOKEN }}
+      OF_ACCOUNT_TYPE: ${{ secrets.OF_ACCOUNT_TYPE }}
+      OF_CHANNEL_CODE: ${{ secrets.OF_CHANNEL_CODE }}
+      OF_CLIENT_VERSION: ${{ secrets.OF_CLIENT_VERSION }}
+      OF_RESOURCE_VERSION: ${{ secrets.OF_RESOURCE_VERSION }}
+      OF_VERSION_NUMBER: ${{ secrets.OF_VERSION_NUMBER }}
+      OF_DEVICE_UUID: ${{ secrets.OF_DEVICE_UUID }}
+      OF_DEVICE_MODEL: ${{ secrets.OF_DEVICE_MODEL }}
+      OF_ANALYSIS_DISTINCT_ID: ${{ secrets.OF_ANALYSIS_DISTINCT_ID }}
+      OF_NETWORK: ${{ secrets.OF_NETWORK }}
+      OF_IP: ${{ secrets.OF_IP }}
+      OF_IPV6: ${{ secrets.OF_IPV6 }}
+      OF_OS_NAME: ${{ secrets.OF_OS_NAME }}
+      OF_OS_VER: ${{ secrets.OF_OS_VER }}
+      OF_LANGUAGE: ${{ secrets.OF_LANGUAGE }}
+      OF_OS: ${{ secrets.OF_OS }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install protobuf python-snappy
+
+      - name: Refresh daily jobs
+        run: python AutoShopGather/watch_daily_jobs_refresh.py
+
+      - name: Commit refreshed JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add AutoShopGather/output/live_daily_jobs.json
+          git add AutoShopGather/output/live_daily_jobs_refresh_state.json
+          if [ -d AutoShopGather/output/archive ]; then
+            git add AutoShopGather/output/archive
+          fi
+          if git diff --cached --quiet; then
+            echo "No JSON changes to commit."
+            exit 0
+          fi
+          git commit -m "Update live daily jobs"
+          git push

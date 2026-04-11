@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+/.overfield-live.env
+/pcsdkui_storage/
+/login_code_response_dump.html
+/pcsdkui_procmon.csv
+/procmon_full.csv

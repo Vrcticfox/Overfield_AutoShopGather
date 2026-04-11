@@ -1,0 +1,322 @@
+import json
+import sys
+from datetime import date
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+VENDOR_ROOT = REPO_ROOT / "of-ps"
+if str(VENDOR_ROOT) not in sys.path:
+    sys.path.insert(0, str(VENDOR_ROOT))
+
+from network.msg_id import MsgId
+from proto.net_pb2 import (
+    ChangeSceneChannelReq,
+    ChangeSceneChannelRsp,
+    PlayerMainDataReq,
+    ShopInfoReq,
+    ShopInfoRsp,
+)
+from AutoShopGather.live_daily_job_probe import (
+    KNOWN_RESPONSE_TYPES,
+    GameProbeClient,
+    apply_local_log_fallbacks,
+    apply_pcsdkui_fallbacks,
+    build_player_login_req,
+    build_verify_login_req,
+    load_env_file,
+    parse_int,
+)
+
+RESOURCES_DIR = VENDOR_ROOT / "resources" / "data"
+OUTPUT_PATH = REPO_ROOT / "AutoShopGather" / "output" / "live_daily_jobs.json"
+
+NPC_BY_SHOP_ID = {
+    2100001: "아즈사",
+    2100002: "아야",
+    2200001: "리처드",
+}
+
+DISPLAY_NAME_ALIASES = {
+    "계란비빔밥": "간장 계란밥",
+    "조미용 술": "요리용 맛술",
+    "열빙어찜": "제철 열빙어찜",
+    "해물죽": "따끈따끈 해물죽",
+}
+
+EXPECTED_2026_04_12 = {
+    "아즈사": {
+        "간장 계란밥": 300,
+        "요리용 맛술": 150,
+    },
+    "아야": {
+        "제철 열빙어찜": 600,
+        "따끈따끈 해물죽": 600,
+        "생선 꼬치구이": 350,
+    },
+    "리처드": {
+        "안경 샘플": 800,
+        "스카프 샘플": 800,
+        "팔찌 샘플": 1000,
+    },
+}
+
+
+def load_json(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8-sig"))
+
+
+def build_string_map(resources_dir: Path) -> dict[int, str]:
+    rows = load_json(resources_dir / "String_Korea.json")["string_item_text"]["datas"]
+    return {
+        row["i_d"]: (row.get("text") or [""])[0]
+        for row in rows
+        if isinstance(row, dict) and row.get("i_d") is not None
+    }
+
+
+def build_item_name_map(resources_dir: Path, string_map: dict[int, str]) -> tuple[dict[int, str], dict[int, dict]]:
+    item_rows = load_json(resources_dir / "Item.json")["item"]["datas"]
+    item_name_map: dict[int, str] = {}
+    item_meta: dict[int, dict] = {}
+    for row in item_rows:
+        item_id = row.get("i_d")
+        if item_id is None:
+            continue
+        item_name_map[item_id] = string_map.get(row.get("text_i_d"), "")
+        item_meta[item_id] = row
+    return item_name_map, item_meta
+
+
+def build_shop_reward_map(resources_dir: Path) -> dict[int, dict[int, int]]:
+    shop_rows = load_json(resources_dir / "Shop.json")["pool"]["datas"]
+    reward_map: dict[int, dict[int, int]] = {}
+    for row in shop_rows:
+        pool_id = row.get("i_d")
+        if pool_id not in {2100001, 2100002, 2100003, 2200001}:
+            continue
+        reward_map[pool_id] = {
+            item["index"]: item["item_num"]
+            for item in row.get("items", [])
+            if item.get("index") is not None and item.get("item_num") is not None
+        }
+    return reward_map
+
+
+def build_candidate_lists(resources_dir: Path, item_meta: dict[int, dict]) -> dict[int, list[int]]:
+    cooking_rows = load_json(resources_dir / "Cooking.json")["cook_food"]["datas"]
+    spin_rows = load_json(resources_dir / "Spin.json")["spin_item"]["datas"]
+
+    cooking_ids = [
+        row["get_item_i_d"]
+        for row in cooking_rows
+        if row.get("get_item_i_d") in item_meta
+    ]
+    spin_tag8_ids = [
+        row["get_item_i_d"]
+        for row in spin_rows
+        if row.get("get_item_i_d") in item_meta
+        and item_meta[row["get_item_i_d"]].get("new_bag_item_tag") == 8
+    ]
+
+    candidate_lists = {
+        2100003: cooking_ids[0:11],
+        2100001: cooking_ids[11:19],
+        2100002: cooking_ids[18:87],
+        2200001: spin_tag8_ids[20:38],
+    }
+
+    expected_lengths = {
+        2100003: 11,
+        2100001: 8,
+        2100002: 69,
+        2200001: 18,
+    }
+    for pool_id, expected_length in expected_lengths.items():
+        actual_length = len(candidate_lists[pool_id])
+        if actual_length != expected_length:
+            raise RuntimeError(
+                f"candidate list length mismatch for pool {pool_id}: "
+                f"expected {expected_length}, got {actual_length}"
+            )
+
+    return candidate_lists
+
+
+def display_name(raw_name: str) -> str:
+    return DISPLAY_NAME_ALIASES.get(raw_name, raw_name)
+
+
+def build_env() -> dict:
+    env_path = REPO_ROOT / ".overfield-live.env"
+    env = load_env_file(env_path)
+    env = apply_pcsdkui_fallbacks(REPO_ROOT, env)
+    env = apply_local_log_fallbacks(env)
+    return env
+
+
+def send_and_expect(client: GameProbeClient, msg_id: int, req, timeout_seconds: float = 5.0) -> dict:
+    packet_id = client.send_proto(msg_id, req)
+    frame, frames = client.recv_until_packet_id(packet_id, timeout_seconds)
+    if frame is None:
+        raise RuntimeError(f"timed out waiting for response to msg_id={msg_id}, frames={len(frames)}")
+    return frame
+
+
+def maybe_change_scene(client: GameProbeClient, scene_id: int = 1) -> dict:
+    req = ChangeSceneChannelReq()
+    req.scene_id = scene_id
+    frame = send_and_expect(client, MsgId.ChangeSceneChannelReq, req)
+    client.drain_for(0.5)
+    return frame
+
+
+def fetch_live_shop_rows() -> dict:
+    KNOWN_RESPONSE_TYPES[MsgId.ChangeSceneChannelRsp] = ChangeSceneChannelRsp
+    KNOWN_RESPONSE_TYPES[MsgId.ShopInfoRsp] = ShopInfoRsp
+
+    env = build_env()
+    host = env.get("OF_HOST") or env.get("OF_GATE_TCP_IP") or env.get("gate_tcp_ip")
+    port = parse_int(env, "OF_PORT", 0) or parse_int(env, "OF_GATE_TCP_PORT", 0)
+    if not host or not port:
+        raise RuntimeError("missing live gate host/port in env or local logs")
+
+    client = GameProbeClient(host, port)
+    try:
+        verify_frame = send_and_expect(client, MsgId.VerifyLoginTokenReq, build_verify_login_req(env))
+        if (verify_frame.get("parsed") or {}).get("status") != 1:
+            raise RuntimeError(f"verify login failed: {verify_frame}")
+
+        login_frame = send_and_expect(client, MsgId.PlayerLoginReq, build_player_login_req(env))
+        if (login_frame.get("parsed") or {}).get("status") != 1:
+            raise RuntimeError(f"player login failed: {login_frame}")
+
+        main_req = PlayerMainDataReq()
+        main_frame = send_and_expect(client, MsgId.PlayerMainDataReq, main_req)
+        if (main_frame.get("parsed") or {}).get("status") != 1:
+            raise RuntimeError(f"player main data failed: {main_frame}")
+
+        change_scene_frame = maybe_change_scene(client, 1)
+
+        shop_frames = {}
+        for shop_id in NPC_BY_SHOP_ID:
+            req = ShopInfoReq()
+            req.shop_id = shop_id
+            shop_frames[shop_id] = send_and_expect(client, MsgId.ShopInfoReq, req)
+
+        return {
+            "verify": verify_frame,
+            "login": login_frame,
+            "main": main_frame,
+            "change_scene": change_scene_frame,
+            "shops": shop_frames,
+        }
+    finally:
+        client.close()
+
+
+def decode_live_jobs() -> dict:
+    string_map = build_string_map(RESOURCES_DIR)
+    item_name_map, item_meta = build_item_name_map(RESOURCES_DIR, string_map)
+    reward_map = build_shop_reward_map(RESOURCES_DIR)
+    candidate_lists = build_candidate_lists(RESOURCES_DIR, item_meta)
+    live = fetch_live_shop_rows()
+
+    npcs = []
+    for shop_id, npc_name in NPC_BY_SHOP_ID.items():
+        parsed = live["shops"][shop_id].get("parsed") or {}
+        if parsed.get("status") != 1:
+            raise RuntimeError(f"shop {shop_id} failed: {parsed}")
+
+        items = []
+        for grid in parsed.get("grids", []):
+            pool_id = int(grid["pool_id"])
+            pool_index = int(grid["pool_index"])
+            relative_index = pool_index % 100
+            candidate_item_ids = candidate_lists[pool_id]
+            if relative_index >= len(candidate_item_ids):
+                raise RuntimeError(
+                    f"pool index out of range: shop={shop_id} pool={pool_id} "
+                    f"pool_index={pool_index} relative_index={relative_index} "
+                    f"candidate_count={len(candidate_item_ids)}"
+                )
+
+            item_id = candidate_item_ids[relative_index]
+            raw_name = item_name_map.get(item_id, "")
+            reward = reward_map.get(pool_id, {}).get(pool_index)
+
+            items.append(
+                {
+                    "grid_id": int(grid["grid_id"]),
+                    "pool_id": pool_id,
+                    "pool_index": pool_index,
+                    "item_id": item_id,
+                    "item_name_raw": raw_name,
+                    "item_name": display_name(raw_name),
+                    "nyang_coin_reward": reward,
+                }
+            )
+
+        items.sort(key=lambda row: row["grid_id"])
+        npcs.append(
+            {
+                "npc_name": npc_name,
+                "shop_id": shop_id,
+                "items": items,
+            }
+        )
+
+    payload = {
+        "date": str(date.today()),
+        "npcs": npcs,
+        "validation": validate_payload(npcs),
+        "live_meta": {
+            "verify_status": (live["verify"].get("parsed") or {}).get("status"),
+            "login_status": (live["login"].get("parsed") or {}).get("status"),
+            "main_status": (live["main"].get("parsed") or {}).get("status"),
+            "change_scene_status": (live["change_scene"].get("parsed") or {}).get("status"),
+            "change_scene_id": (live["change_scene"].get("parsed") or {}).get("scene_id"),
+        },
+    }
+    return payload
+
+
+def validate_payload(npcs: list[dict]) -> dict:
+    expected = EXPECTED_2026_04_12 if str(date.today()) == "2026-04-12" else None
+    if expected is None:
+        return {"checked": False}
+
+    actual = {
+        npc["npc_name"]: {
+            item["item_name"]: item["nyang_coin_reward"]
+            for item in npc["items"]
+        }
+        for npc in npcs
+    }
+    mismatches = []
+    for npc_name, expected_items in expected.items():
+        actual_items = actual.get(npc_name, {})
+        if actual_items != expected_items:
+            mismatches.append(
+                {
+                    "npc_name": npc_name,
+                    "expected": expected_items,
+                    "actual": actual_items,
+                }
+            )
+    return {
+        "checked": True,
+        "ok": not mismatches,
+        "mismatches": mismatches,
+    }
+
+
+def main() -> None:
+    payload = decode_live_jobs()
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(json.dumps(payload, ensure_ascii=False, indent=2))
+    print(f"\nsaved: {OUTPUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()
