@@ -3,6 +3,7 @@
 [![Refreshing Data Status](https://github.com/Vrcticfox/Overfield_AutoShopGather/actions/workflows/daily-jobs-refresh.yml/badge.svg)](https://github.com/Vrcticfox/Overfield_AutoShopGather/actions/workflows/daily-jobs-refresh.yml)
 
 Overfield Daily Shop Info Auto Gatherer
+Works watch action on every 23:55(KST), via cron-job.
 
 ## File saved on..
 - original is [here](https://raw.githubusercontent.com/Vrcticfox/Overfield_AutoShopGather/refs/heads/main/AutoShopGather/output/live_daily_jobs.json)
