@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-13",
+  "date": "2026-04-12",
   "npcs": [
     {
       "npc_name": "아즈사",
@@ -88,7 +88,7 @@
     "verify_status": 1,
     "login_status": 1,
     "main_status": 1,
-    "change_scene_status": 1,
+    "change_scene_status": 25,
     "change_scene_id": 1
   }
 }
