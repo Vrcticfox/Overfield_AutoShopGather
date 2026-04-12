@@ -2,7 +2,7 @@ name: Daily Jobs Refresh
 
 on:
   schedule:
-    - cron: "55 14 * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       mode:
