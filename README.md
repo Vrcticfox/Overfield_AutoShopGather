@@ -1,5 +1,6 @@
 # Overfield_AutoShopGather
 [![](https://img.shields.io/badge/Made_With-Codex_IDE_Extension-white)](https://developers.openai.com/codex/ide)
+[![Refreshing Data Status](https://github.com/Vrcticfox/Overfield_AutoShopGather/actions/workflows/daily-jobs-refresh.yml/badge.svg)](https://github.com/Vrcticfox/Overfield_AutoShopGather/actions/workflows/daily-jobs-refresh.yml)
 
 Overfield Daily Shop Info Auto Gatherer
 
