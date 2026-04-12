@@ -1,8 +1,9 @@
 import json
 import os
 import sys
-from datetime import date
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 VENDOR_ROOT = REPO_ROOT / "of-ps"
@@ -30,6 +31,7 @@ from AutoShopGather.live_daily_job_probe import (
 
 RESOURCES_DIR = VENDOR_ROOT / "resources" / "data"
 OUTPUT_PATH = REPO_ROOT / "AutoShopGather" / "output" / "live_daily_jobs.json"
+KST = ZoneInfo("Asia/Seoul")
 
 DEFAULT_ENV = {
     "OF_HOST": "158.179.182.190",
@@ -358,7 +360,7 @@ def decode_live_jobs() -> dict:
         )
 
     payload = {
-        "date": str(date.today()),
+        "date": datetime.now(KST).date().isoformat(),
         "npcs": npcs,
         "live_meta": {
             "verify_status": (live["verify"].get("parsed") or {}).get("status"),
