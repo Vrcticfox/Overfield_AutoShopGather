@@ -71,6 +71,14 @@ def current_watch_window_start(current: datetime) -> datetime:
     return current.replace(hour=0, minute=0, second=0, microsecond=0)
 
 
+def target_refresh_date(current: datetime) -> str:
+    watch_window_start = current_watch_window_start(current)
+    watch_window_end = watch_window_start + timedelta(minutes=START_WINDOW_MINUTES)
+    if current < watch_window_end:
+        return current.date().isoformat()
+    return (watch_window_start + timedelta(days=1)).date().isoformat()
+
+
 def sleep_until(target: datetime) -> None:
     while True:
         remaining = (target - now_kst()).total_seconds()
@@ -88,17 +96,17 @@ def archive_payload(payload: dict, detected_at: datetime) -> Path:
 
 def main() -> None:
     state = load_state()
-    today = now_kst().date().isoformat()
+    started_at = now_kst()
+    target_date = target_refresh_date(started_at)
 
-    if state.get("detected_date") == today and OUTPUT_PATH.exists():
-        print(f"[skip] {today} 는 이미 갱신 감지를 완료했습니다.")
+    if state.get("detected_date") == target_date and OUTPUT_PATH.exists():
+        print(f"[skip] {target_date} 는 이미 갱신 감지를 완료했습니다.")
         print(f"[skip] output: {OUTPUT_PATH}")
         return
 
     baseline_payload = load_baseline_payload()
     baseline_signature = signature(baseline_payload) if baseline_payload else None
 
-    started_at = now_kst()
     watch_window_start = current_watch_window_start(started_at)
     watch_window_end = watch_window_start + timedelta(minutes=START_WINDOW_MINUTES)
 
