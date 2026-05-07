@@ -8,18 +8,18 @@
         {
           "grid_id": 1,
           "pool_id": 2100001,
-          "pool_index": 207,
+          "pool_index": 107,
           "item_id": 5013034,
           "item_name": "바삭바삭 에그롤",
-          "nyang_coin_reward": 300
+          "nyang_coin_reward": 200
         },
         {
           "grid_id": 2,
           "pool_id": 2100003,
-          "pool_index": 310,
-          "item_id": 5012011,
-          "item_name": "쌀밥",
-          "nyang_coin_reward": 350
+          "pool_index": 208,
+          "item_id": 5012009,
+          "item_name": "케첩",
+          "nyang_coin_reward": 200
         }
       ]
     },
@@ -30,25 +30,25 @@
         {
           "grid_id": 1,
           "pool_id": 2100002,
-          "pool_index": 205,
-          "item_id": 5013005,
-          "item_name": "마늘 메기 조림",
-          "nyang_coin_reward": 600
+          "pool_index": 334,
+          "item_id": 5013042,
+          "item_name": "갈치 구이",
+          "nyang_coin_reward": 800
         },
         {
           "grid_id": 2,
           "pool_id": 2100002,
-          "pool_index": 355,
-          "item_id": 5013063,
-          "item_name": "쥐치 조림",
-          "nyang_coin_reward": 800
+          "pool_index": 214,
+          "item_id": 5013018,
+          "item_name": "쫀득한 찰광어찜",
+          "nyang_coin_reward": 600
         },
         {
           "grid_id": 3,
           "pool_id": 2100002,
-          "pool_index": 335,
-          "item_id": 5013043,
-          "item_name": "타코야끼",
+          "pool_index": 314,
+          "item_id": 5013018,
+          "item_name": "쫀득한 찰광어찜",
           "nyang_coin_reward": 800
         }
       ]
@@ -88,7 +88,7 @@
     "verify_status": 1,
     "login_status": 1,
     "main_status": 1,
-    "change_scene_status": 1,
+    "change_scene_status": 25,
     "change_scene_id": 1
   }
 }
