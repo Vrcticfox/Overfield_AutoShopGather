@@ -1,10 +1,10 @@
 {
-  "detected_date": "2026-05-07",
-  "detected_at": "2026-05-07T00:00:29.350027+09:00",
-  "attempt": 7,
+  "detected_date": "2026-05-08",
+  "detected_at": "2026-05-08T00:00:23.762462+09:00",
+  "attempt": 6,
   "reason": "signature_changed",
-  "previous_signature": "[{\"item_name\":\"망토 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"스카프 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"치마 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"마늘 메기 조림\",\"npc_name\":\"아야\",\"nyang_coin_reward\":600},{\"item_name\":\"쥐치 조림\",\"npc_name\":\"아야\",\"nyang_coin_reward\":800},{\"item_name\":\"타코야끼\",\"npc_name\":\"아야\",\"nyang_coin_reward\":800},{\"item_name\":\"바삭바삭 에그롤\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":300},{\"item_name\":\"쌀밥\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":350}]",
-  "signature": "[{\"item_name\":\"망토 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":600},{\"item_name\":\"상의 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"안경 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"마늘 메기 조림\",\"npc_name\":\"아야\",\"nyang_coin_reward\":600},{\"item_name\":\"쥐치 조림\",\"npc_name\":\"아야\",\"nyang_coin_reward\":800},{\"item_name\":\"타코야끼\",\"npc_name\":\"아야\",\"nyang_coin_reward\":800},{\"item_name\":\"바삭바삭 에그롤\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":300},{\"item_name\":\"쌀밥\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":350}]",
+  "previous_signature": "[{\"item_name\":\"망토 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":600},{\"item_name\":\"상의 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"안경 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"갈치 구이\",\"npc_name\":\"아야\",\"nyang_coin_reward\":800},{\"item_name\":\"쫀득한 찰광어찜\",\"npc_name\":\"아야\",\"nyang_coin_reward\":600},{\"item_name\":\"쫀득한 찰광어찜\",\"npc_name\":\"아야\",\"nyang_coin_reward\":800},{\"item_name\":\"바삭바삭 에그롤\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":200},{\"item_name\":\"케첩\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":200}]",
+  "signature": "[{\"item_name\":\"머리띠 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"신발 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":800},{\"item_name\":\"장갑 샘플\",\"npc_name\":\"리처드\",\"nyang_coin_reward\":1000},{\"item_name\":\"먹물 리조또\",\"npc_name\":\"아야\",\"nyang_coin_reward\":600},{\"item_name\":\"생선 꼬치구이\",\"npc_name\":\"아야\",\"nyang_coin_reward\":600},{\"item_name\":\"해산물 크림수프\",\"npc_name\":\"아야\",\"nyang_coin_reward\":600},{\"item_name\":\"버섯 구이\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":200},{\"item_name\":\"후추\",\"npc_name\":\"아즈사\",\"nyang_coin_reward\":200}]",
   "output_path": "/home/runner/work/Overfield_AutoShopGather/Overfield_AutoShopGather/AutoShopGather/output/live_daily_jobs.json",
-  "archive_path": "/home/runner/work/Overfield_AutoShopGather/Overfield_AutoShopGather/AutoShopGather/output/archive/live_daily_jobs_2026-05-07.json"
+  "archive_path": "/home/runner/work/Overfield_AutoShopGather/Overfield_AutoShopGather/AutoShopGather/output/archive/live_daily_jobs_2026-05-08.json"
 }
