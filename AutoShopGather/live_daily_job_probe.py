@@ -68,8 +68,11 @@ def load_pcsdkui_auth_state(repo_root: Path) -> dict:
     return {}
 
 
-def load_qgpc_login_state() -> dict:
-    log_path = Path(r"C:\Program Files (x86)\Steam\steamapps\common\OverField\launcher_Data\Quicksdk\qgpc_log.txt")
+def load_qgpc_login_state(log_path: str | Path | None = None) -> dict:
+    if log_path is None:
+        log_path = Path(r"C:\Program Files (x86)\Steam\steamapps\common\OverField\launcher_Data\Quicksdk\qgpc_log.txt")
+    else:
+        log_path = Path(log_path)
     if not log_path.exists():
         return {}
 
@@ -101,8 +104,11 @@ def load_qgpc_login_state() -> dict:
     }
 
 
-def load_player_log_state() -> dict:
-    player_log = Path.home() / "AppData" / "LocalLow" / "Inutan" / "OverField" / "Player.log"
+def load_player_log_state(player_log: str | Path | None = None) -> dict:
+    if player_log is None:
+        player_log = Path.home() / "AppData" / "LocalLow" / "Inutan" / "OverField" / "Player.log"
+    else:
+        player_log = Path(player_log)
     if not player_log.exists():
         return {}
 
