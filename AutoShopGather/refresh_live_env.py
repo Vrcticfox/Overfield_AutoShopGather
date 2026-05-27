@@ -48,7 +48,7 @@ def load_env_file(path: Path) -> dict:
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, value = line.split("=", 1)
-        env[key.strip()] = value.strip()
+        env[key.strip().lstrip("\ufeff")] = value.strip()
     return env
 
 
@@ -220,11 +220,15 @@ def set_env_value(lines: list[str], key: str, value: str) -> tuple[list[str], bo
     changed = False
     out = []
     for line in lines:
-        if line.startswith(prefix):
-            old_value = line[len(prefix) :]
+        normalized_line = line.lstrip("\ufeff")
+        if normalized_line.startswith(prefix):
+            old_value = normalized_line[len(prefix) :]
+            if updated:
+                changed = True
+                continue
             out.append(f"{key}={value}")
             updated = True
-            changed = old_value != value
+            changed = changed or old_value != value or line != normalized_line
         else:
             out.append(line)
     if not updated:
