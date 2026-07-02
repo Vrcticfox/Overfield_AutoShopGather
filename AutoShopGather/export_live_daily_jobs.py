@@ -163,6 +163,11 @@ CANONICAL_ITEM_NAMES = {
 }
 
 
+POOL_ENTRY_NAME_OVERRIDES = {
+    (2100002, 0): "어둠 요리",
+}
+
+
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8-sig"))
@@ -245,7 +250,11 @@ def build_candidate_lists(resources_dir: Path, item_meta: dict[int, dict]) -> di
     return candidate_lists
 
 
-def display_name(item_id: int, raw_name: str) -> str:
+def display_name(item_id: int, raw_name: str, pool_id: int | None = None, relative_index: int | None = None) -> str:
+    if pool_id is not None and relative_index is not None:
+        override = POOL_ENTRY_NAME_OVERRIDES.get((pool_id, relative_index))
+        if override:
+            return override
     return CANONICAL_ITEM_NAMES.get(item_id, raw_name)
 
 
@@ -357,7 +366,7 @@ def decode_live_jobs() -> dict:
                     "pool_id": pool_id,
                     "pool_index": pool_index,
                     "item_id": item_id,
-                    "item_name": display_name(item_id, raw_name),
+                    "item_name": display_name(item_id, raw_name, pool_id, relative_index),
                     "nyang_coin_reward": reward,
                 }
             )
