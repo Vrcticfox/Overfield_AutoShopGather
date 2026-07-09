@@ -10,6 +10,7 @@ from urllib.parse import parse_qs, urlparse
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 VENDOR_ROOT = REPO_ROOT / "of-ps"
+DEFAULT_GAME_INSTALL_DIR = Path(r"C:\Program Files (x86)\Steam\steamapps\common\OverField")
 if str(VENDOR_ROOT) not in sys.path:
     sys.path.insert(0, str(VENDOR_ROOT))
 
@@ -68,8 +69,30 @@ def load_pcsdkui_auth_state(repo_root: Path) -> dict:
     return {}
 
 
-def load_qgpc_login_state() -> dict:
-    log_path = Path(r"C:\Program Files (x86)\Steam\steamapps\common\OverField\launcher_Data\Quicksdk\qgpc_log.txt")
+def game_install_dir(env: dict | None = None) -> Path:
+    env = env or {}
+    return Path(env.get("OF_GAME_INSTALL_DIR") or DEFAULT_GAME_INSTALL_DIR).expanduser()
+
+
+def qgpc_log_path(env: dict | None = None) -> Path:
+    env = env or {}
+    if env.get("OF_QGPC_LOG_PATH"):
+        return Path(env["OF_QGPC_LOG_PATH"]).expanduser()
+    return game_install_dir(env) / "launcher_Data" / "Quicksdk" / "qgpc_log.txt"
+
+
+def player_log_path(env: dict | None = None) -> Path:
+    env = env or {}
+    if env.get("OF_PLAYER_LOG_PATH"):
+        return Path(env["OF_PLAYER_LOG_PATH"]).expanduser()
+    return Path.home() / "AppData" / "LocalLow" / "Inutan" / "OverField" / "Player.log"
+
+
+def load_qgpc_login_state(log_path: str | Path | None = None) -> dict:
+    if log_path is None:
+        log_path = qgpc_log_path()
+    else:
+        log_path = Path(log_path)
     if not log_path.exists():
         return {}
 
@@ -101,8 +124,11 @@ def load_qgpc_login_state() -> dict:
     }
 
 
-def load_player_log_state() -> dict:
-    player_log = Path.home() / "AppData" / "LocalLow" / "Inutan" / "OverField" / "Player.log"
+def load_player_log_state(player_log: str | Path | None = None) -> dict:
+    if player_log is None:
+        player_log = player_log_path()
+    else:
+        player_log = Path(player_log)
     if not player_log.exists():
         return {}
 
@@ -243,7 +269,7 @@ def apply_pcsdkui_fallbacks(repo_root: Path, env: dict) -> dict:
 
 
 def apply_local_log_fallbacks(env: dict) -> dict:
-    qgpc_state = load_qgpc_login_state()
+    qgpc_state = load_qgpc_login_state(qgpc_log_path(env))
     if qgpc_state:
         if qgpc_state.get("uid"):
             env["OF_SDK_UID"] = qgpc_state["uid"]
@@ -254,7 +280,7 @@ def apply_local_log_fallbacks(env: dict) -> dict:
         if qgpc_state.get("auth_token") and not env.get("OF_AUTH_TOKEN"):
             env["OF_AUTH_TOKEN"] = qgpc_state["auth_token"]
 
-    player_state = load_player_log_state()
+    player_state = load_player_log_state(player_log_path(env))
     if player_state:
         def should_override(env_key: str) -> bool:
             value = env.get(env_key, "")
