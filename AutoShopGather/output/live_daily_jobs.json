@@ -16,9 +16,9 @@
         {
           "grid_id": 2,
           "pool_id": 2100003,
-          "pool_index": 204,
-          "item_id": 5012005,
-          "item_name": "간장",
+          "pool_index": 200,
+          "item_id": 5012001,
+          "item_name": "식초",
           "nyang_coin_reward": 200
         }
       ]
@@ -30,25 +30,25 @@
         {
           "grid_id": 1,
           "pool_id": 2100002,
-          "pool_index": 240,
-          "item_id": 5013048,
-          "item_name": "철갑상어 고추찜",
-          "nyang_coin_reward": 600
+          "pool_index": 368,
+          "item_id": 5013076,
+          "item_name": "매콤 가오리찜",
+          "nyang_coin_reward": 800
         },
         {
           "grid_id": 2,
           "pool_id": 2100002,
-          "pool_index": 339,
-          "item_id": 5013047,
-          "item_name": "황금새우볼",
+          "pool_index": 322,
+          "item_id": 5013029,
+          "item_name": "간장 소스 가자미전",
           "nyang_coin_reward": 800
         },
         {
           "grid_id": 3,
           "pool_id": 2100002,
-          "pool_index": 244,
-          "item_id": 5013052,
-          "item_name": "매콤 대구볶음",
+          "pool_index": 239,
+          "item_id": 5013047,
+          "item_name": "황금새우볼",
           "nyang_coin_reward": 600
         }
       ]
@@ -60,25 +60,25 @@
         {
           "grid_id": 1,
           "pool_id": 2200001,
-          "pool_index": 207,
-          "item_id": 5033008,
-          "item_name": "초커 샘플",
+          "pool_index": 214,
+          "item_id": 5033015,
+          "item_name": "치마 샘플",
           "nyang_coin_reward": 800
         },
         {
           "grid_id": 2,
           "pool_id": 2200001,
-          "pool_index": 213,
-          "item_id": 5033014,
-          "item_name": "바지 샘플",
-          "nyang_coin_reward": 800
+          "pool_index": 117,
+          "item_id": 5033018,
+          "item_name": "파우치 샘플",
+          "nyang_coin_reward": 600
         },
         {
           "grid_id": 3,
           "pool_id": 2200001,
-          "pool_index": 207,
-          "item_id": 5033008,
-          "item_name": "초커 샘플",
+          "pool_index": 208,
+          "item_id": 5033009,
+          "item_name": "스카프 샘플",
           "nyang_coin_reward": 800
         }
       ]
@@ -88,7 +88,7 @@
     "verify_status": 1,
     "login_status": 1,
     "main_status": 1,
-    "change_scene_status": 25,
+    "change_scene_status": 1,
     "change_scene_id": 1
   }
 }
