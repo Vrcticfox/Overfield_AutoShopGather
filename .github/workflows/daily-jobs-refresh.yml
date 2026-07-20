@@ -1,4 +1,4 @@
-name: Daily Jobs Refresh
+name: Daily Refresh
 
 on:
   workflow_dispatch:
