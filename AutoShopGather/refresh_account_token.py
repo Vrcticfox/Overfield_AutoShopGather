@@ -16,6 +16,10 @@ from AutoShopGather.refresh_live_env import (
     load_env_file,
 )
 
+DEFAULT_DISPATCH_URL = (
+    "http://dsp-global-of.inutan.com:18881/dispatch/client_hot_update"
+)
+
 
 class OAuthFormParser(HTMLParser):
     def __init__(self) -> None:
@@ -140,6 +144,44 @@ def refresh_account_token(settings: dict[str, str]) -> dict[str, str]:
     }
 
 
+def refresh_runtime_config(
+    settings: dict[str, str],
+    login_values: dict[str, str],
+) -> dict[str, str]:
+    dispatch_url = settings.get("OF_DISPATCH_URL") or DEFAULT_DISPATCH_URL
+    form = {
+        "version": settings.get("OF_CLIENT_VERSION", ""),
+        "version2": settings.get("OF_VERSION_NUMBER", ""),
+        "accountType": settings.get("OF_ACCOUNT_TYPE", ""),
+        "os": settings.get("OF_OS", "0"),
+        "lastloginsdkuid": login_values["OF_SDK_UID"],
+    }
+    request = Request(
+        dispatch_url,
+        data=urlencode(form).encode("utf-8"),
+        headers={
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "User-Agent": "Overfield-AutoShopGather",
+        },
+        method="POST",
+    )
+    with build_opener().open(request, timeout=20) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+
+    current_version = str(payload.get("currentVersion") or "")
+    if not payload.get("status") or "_" not in current_version:
+        raise RuntimeError(
+            "Runtime configuration refresh failed "
+            f"(message={payload.get('message') or 'unknown'})"
+        )
+
+    client_version, resource_version = current_version.split("_", 1)
+    return {
+        "OF_CLIENT_VERSION": client_version,
+        "OF_RESOURCE_VERSION": resource_version,
+    }
+
+
 def write_github_env(path: Path, values: dict[str, str]) -> None:
     for key, value in values.items():
         if "\n" in value or "\r" in value:
@@ -169,7 +211,13 @@ def sync_refresh_secrets(settings: dict[str, str], values: dict[str, str]) -> No
     if not public_key:
         raise RuntimeError("GitHub public key response was empty")
 
-    for key in ("OF_AUTH_TOKEN", "OF_LOGIN_TOKEN", "OF_SDK_UID"):
+    for key in (
+        "OF_AUTH_TOKEN",
+        "OF_LOGIN_TOKEN",
+        "OF_SDK_UID",
+        "OF_CLIENT_VERSION",
+        "OF_RESOURCE_VERSION",
+    ):
         api_json(
             "PUT",
             f"{base}/{key}",
@@ -201,7 +249,10 @@ def main() -> None:
 
     settings = load_settings(Path(args.env))
     previous_auth_token = settings.get("OF_AUTH_TOKEN", "")
-    values = refresh_account_token(settings)
+    login_values = refresh_account_token(settings)
+    settings.update(login_values)
+    runtime_values = refresh_runtime_config(settings, login_values)
+    values = {**login_values, **runtime_values}
 
     if args.github_env:
         write_github_env(Path(args.github_env), values)
@@ -213,7 +264,9 @@ def main() -> None:
         "[ok] Account token refresh succeeded "
         f"(userToken={len(values['OF_LOGIN_TOKEN'])} chars, "
         f"authToken={len(values['OF_AUTH_TOKEN'])} chars, "
-        f"rotated={values['OF_AUTH_TOKEN'] != previous_auth_token})"
+        f"rotated={values['OF_AUTH_TOKEN'] != previous_auth_token}, "
+        f"clientVersion={values['OF_CLIENT_VERSION']}, "
+        f"resourceVersion={values['OF_RESOURCE_VERSION']})"
     )
 
 
