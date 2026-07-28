@@ -29,6 +29,9 @@ jobs:
       OF_PORT: ${{ secrets.OF_PORT }}
       OF_SDK_UID: ${{ secrets.OF_SDK_UID }}
       OF_LOGIN_TOKEN: ${{ secrets.OF_LOGIN_TOKEN }}
+      OF_AUTH_TOKEN: ${{ secrets.OF_AUTH_TOKEN }}
+      OF_EMAIL: ${{ secrets.OF_EMAIL }}
+      OF_ACCOUNT_LOGIN_URL: ${{ secrets.OF_ACCOUNT_LOGIN_URL }}
       OF_ACCOUNT_TYPE: ${{ secrets.OF_ACCOUNT_TYPE }}
       OF_CHANNEL_CODE: ${{ secrets.OF_CHANNEL_CODE }}
       OF_CLIENT_VERSION: ${{ secrets.OF_CLIENT_VERSION }}
@@ -62,7 +65,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install protobuf python-snappy grpcio-tools
+          python -m pip install protobuf python-snappy grpcio-tools pynacl
 
       - name: Download game resource data
         run: |
@@ -91,10 +94,18 @@ jobs:
             echo "mode=${{ github.event.inputs.mode }}" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Refresh account login token
+        env:
+          AUTH_REFRESH_PAT: ${{ secrets.AUTH_REFRESH_PAT }}
+        run: |
+          python -m AutoShopGather.refresh_account_token \
+            --github-env "$GITHUB_ENV" \
+            --sync-secrets
+
       - name: Validate required secrets
         run: |
           missing=0
-          for key in OF_SDK_UID OF_LOGIN_TOKEN OF_DEVICE_UUID OF_IP; do
+          for key in OF_SDK_UID OF_LOGIN_TOKEN OF_AUTH_TOKEN OF_DEVICE_UUID OF_IP; do
             value="${!key}"
             if [ -z "$value" ]; then
               echo "[missing] $key"

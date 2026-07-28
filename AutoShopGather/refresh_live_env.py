@@ -21,6 +21,9 @@ SECRET_KEYS = (
     "OF_PORT",
     "OF_SDK_UID",
     "OF_LOGIN_TOKEN",
+    "OF_AUTH_TOKEN",
+    "OF_EMAIL",
+    "OF_ACCOUNT_LOGIN_URL",
     "OF_ACCOUNT_TYPE",
     "OF_CHANNEL_CODE",
     "OF_CLIENT_VERSION",
@@ -36,6 +39,11 @@ SECRET_KEYS = (
     "OF_OS_VER",
     "OF_LANGUAGE",
     "OF_OS",
+    "AUTH_REFRESH_PAT",
+)
+
+OAUTH_URL_RE = re.compile(
+    r"https://sdkapi-of-global\.inutan\.com/openapi/oauth[^\s\"'<>]+"
 )
 
 
@@ -57,7 +65,11 @@ def load_qgpc_login_state(log_path: Path) -> dict:
         return {}
 
     matches = []
+    oauth_url = ""
     for raw_line in log_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+        oauth_match = OAUTH_URL_RE.search(raw_line)
+        if oauth_match:
+            oauth_url = oauth_match.group(0).rstrip(")]},;")
         if "OnMessageReceived:" not in raw_line or '"action":"loginSuccess"' not in raw_line:
             continue
         json_start = raw_line.find("{")
@@ -71,17 +83,19 @@ def load_qgpc_login_state(log_path: Path) -> dict:
         if isinstance(params, dict) and params.get("uid") and params.get("userToken"):
             matches.append(params)
 
-    if not matches:
-        return {}
-
-    latest = matches[-1]
-    return {
-        "uid": str(latest.get("uid", "")),
-        "username": str(latest.get("username", "")),
-        "user_token": str(latest.get("userToken", "")),
-        "auth_token": str(latest.get("authToken", "")),
-        "timeleft": str(latest.get("timeleft", "")),
-    }
+    state = {"oauth_url": oauth_url}
+    if matches:
+        latest = matches[-1]
+        state.update(
+            {
+                "uid": str(latest.get("uid", "")),
+                "username": str(latest.get("username", "")),
+                "user_token": str(latest.get("userToken", "")),
+                "auth_token": str(latest.get("authToken", "")),
+                "timeleft": str(latest.get("timeleft", "")),
+            }
+        )
+    return state
 
 
 def load_player_log_state(player_log: Path) -> dict:
@@ -266,6 +280,12 @@ def collect_updates(env: dict) -> dict[str, str]:
         updates["OF_SDK_UID"] = qgpc["uid"]
     if qgpc.get("user_token"):
         updates["OF_LOGIN_TOKEN"] = qgpc["user_token"]
+    if qgpc.get("auth_token") and not env.get("OF_AUTH_TOKEN"):
+        updates["OF_AUTH_TOKEN"] = qgpc["auth_token"]
+    if qgpc.get("username") and not env.get("OF_EMAIL"):
+        updates["OF_EMAIL"] = qgpc["username"]
+    if qgpc.get("oauth_url"):
+        updates["OF_ACCOUNT_LOGIN_URL"] = qgpc["oauth_url"]
 
     mappings = {
         "OF_HOST": "gate_tcp_ip",
@@ -350,9 +370,11 @@ def sync_github_secrets(env: dict) -> None:
     if not public_key:
         raise RuntimeError("GitHub public key response was empty.")
 
+    sync_values = dict(env)
+    sync_values["AUTH_REFRESH_PAT"] = token
     synced = []
     for key in SECRET_KEYS:
-        value = env.get(key, "")
+        value = sync_values.get(key, "")
         if value == "":
             continue
         payload = {
