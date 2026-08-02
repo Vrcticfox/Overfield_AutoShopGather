@@ -8,17 +8,17 @@
         {
           "grid_id": 1,
           "pool_id": 2100001,
-          "pool_index": 300,
-          "item_id": 5013007,
-          "item_name": "간장 계란밥",
-          "nyang_coin_reward": 500
+          "pool_index": 201,
+          "item_id": 5013012,
+          "item_name": "사과파이",
+          "nyang_coin_reward": 300
         },
         {
           "grid_id": 2,
           "pool_id": 2100003,
-          "pool_index": 206,
-          "item_id": 5012007,
-          "item_name": "슬라이스 고기",
+          "pool_index": 202,
+          "item_id": 5012003,
+          "item_name": "면",
           "nyang_coin_reward": 200
         }
       ]
@@ -88,7 +88,7 @@
     "verify_status": 1,
     "login_status": 1,
     "main_status": 1,
-    "change_scene_status": 1,
+    "change_scene_status": 25,
     "change_scene_id": 1
   }
 }
