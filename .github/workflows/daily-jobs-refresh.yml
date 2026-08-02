@@ -184,3 +184,72 @@ jobs:
 
           git commit -m "Update overfield daily jobs JSON"
           git push origin "$PUBLIC_REPO_BRANCH"
+
+      - name: Watch briefly after publish
+        id: post_publish_watch
+        run: |
+          set +e
+          python -m AutoShopGather.post_publish_watch
+          status=$?
+          set -e
+
+          if [ "$status" -eq 10 ]; then
+            echo "corrected=true" >> "$GITHUB_OUTPUT"
+          elif [ "$status" -eq 0 ]; then
+            echo "corrected=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "corrected=false" >> "$GITHUB_OUTPUT"
+            echo "Post-publish watch failed; keeping the first published result."
+          fi
+
+      - name: Commit corrected JSON
+        if: steps.post_publish_watch.outputs.corrected == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add AutoShopGather/output/live_daily_jobs.json
+          if [ -f AutoShopGather/output/live_daily_jobs_refresh_state.json ]; then
+            git add AutoShopGather/output/live_daily_jobs_refresh_state.json
+          fi
+          if [ -d AutoShopGather/output/archive ]; then
+            git add AutoShopGather/output/archive
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No corrected JSON changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Correct live daily jobs after publish"
+          git push
+
+      - name: Publish corrected JSON
+        if: steps.post_publish_watch.outputs.corrected == 'true'
+        run: |
+          if [ -z "$PUBLIC_REPO_PAT" ]; then
+            echo "PUBLIC_REPO_PAT secret is missing."
+            exit 1
+          fi
+
+          SRC_JSON="AutoShopGather/output/live_daily_jobs.json"
+          TMP_DIR="$(mktemp -d)"
+          trap 'rm -rf "$TMP_DIR"' EXIT
+
+          git clone "https://x-access-token:${PUBLIC_REPO_PAT}@github.com/${PUBLIC_REPO_OWNER}/${PUBLIC_REPO_NAME}.git" "$TMP_DIR/public"
+          cd "$TMP_DIR/public"
+          git checkout "$PUBLIC_REPO_BRANCH"
+
+          mkdir -p "$PUBLIC_REPO_TARGET_DIR"
+          cp "${GITHUB_WORKSPACE}/${SRC_JSON}" "${PUBLIC_REPO_TARGET_DIR}/${PUBLIC_REPO_JSON_NAME}"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${PUBLIC_REPO_TARGET_DIR}/${PUBLIC_REPO_JSON_NAME}"
+
+          if git diff --cached --quiet; then
+            echo "No corrected public JSON changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Correct overfield daily jobs JSON"
+          git push origin "$PUBLIC_REPO_BRANCH"

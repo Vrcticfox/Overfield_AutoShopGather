@@ -11,6 +11,7 @@ KST = ZoneInfo("Asia/Seoul")
 STATE_PATH = OUTPUT_PATH.with_name("live_daily_jobs_refresh_state.json")
 ARCHIVE_DIR = OUTPUT_PATH.parent / "archive"
 POLL_SECONDS = 3.0
+STABLE_CONFIRMATIONS = 3
 START_WINDOW_MINUTES = 10
 MAX_WATCH_MINUTES = 30
 
@@ -124,6 +125,8 @@ def main() -> None:
     print(f"[start] 감시 시작: {now_kst().isoformat()} / 주기 {POLL_SECONDS:.0f}초")
 
     attempt = 0
+    candidate_signature = None
+    candidate_streak = 0
     watch_started_at = now_kst()
     watch_deadline = watch_started_at + timedelta(minutes=MAX_WATCH_MINUTES)
     while True:
@@ -148,6 +151,27 @@ def main() -> None:
         detected_at = now_kst()
         payload = decode_live_jobs()
         current_signature = signature(payload)
+
+        is_new_candidate = (
+            baseline_signature is None or current_signature != baseline_signature
+        )
+        if is_new_candidate:
+            if current_signature == candidate_signature:
+                candidate_streak += 1
+            else:
+                candidate_signature = current_signature
+                candidate_streak = 1
+
+            print(
+                f"[candidate] attempt={attempt} "
+                f"stable={candidate_streak}/{STABLE_CONFIRMATIONS}"
+            )
+            if candidate_streak < STABLE_CONFIRMATIONS:
+                time.sleep(POLL_SECONDS)
+                continue
+        else:
+            candidate_signature = None
+            candidate_streak = 0
 
         if baseline_signature is None:
             save_json(OUTPUT_PATH, payload)
