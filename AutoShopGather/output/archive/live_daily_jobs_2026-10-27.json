@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-27",
+  "npcs": [
+    {
+      "npc_name": "아즈사",
+      "shop_id": 2100001,
+      "items": [
+        {
+          "grid_id": 1,
+          "pool_id": 2100001,
+          "pool_index": 304,
+          "item_id": 5013019,
+          "item_name": "계란 볶음밥",
+          "nyang_coin_reward": 500
+        },
+        {
+          "grid_id": 2,
+          "pool_id": 2100003,
+          "pool_index": 203,
+          "item_id": 5012004,
+          "item_name": "후추",
+          "nyang_coin_reward": 200
+        }
+      ]
+    },
+    {
+      "npc_name": "아야",
+      "shop_id": 2100002,
+      "items": [
+        {
+          "grid_id": 1,
+          "pool_id": 2100002,
+          "pool_index": 239,
+          "item_id": 5013047,
+          "item_name": "황금새우볼",
+          "nyang_coin_reward": 600
+        },
+        {
+          "grid_id": 2,
+          "pool_id": 2100002,
+          "pool_index": 101,
+          "item_id": 5013001,
+          "item_name": "매콤새콤 미역무침",
+          "nyang_coin_reward": 350
+        },
+        {
+          "grid_id": 3,
+          "pool_id": 2100002,
+          "pool_index": 247,
+          "item_id": 5013055,
+          "item_name": "무지개송어찜",
+          "nyang_coin_reward": 600
+        }
+      ]
+    },
+    {
+      "npc_name": "리처드",
+      "shop_id": 2200001,
+      "items": [
+        {
+          "grid_id": 1,
+          "pool_id": 2200001,
+          "pool_index": 205,
+          "item_id": 5033006,
+          "item_name": "외투 샘플",
+          "nyang_coin_reward": 800
+        },
+        {
+          "grid_id": 2,
+          "pool_id": 2200001,
+          "pool_index": 316,
+          "item_id": 5033017,
+          "item_name": "신발 샘플",
+          "nyang_coin_reward": 1000
+        },
+        {
+          "grid_id": 3,
+          "pool_id": 2200001,
+          "pool_index": 316,
+          "item_id": 5033017,
+          "item_name": "신발 샘플",
+          "nyang_coin_reward": 1000
+        }
+      ]
+    }
+  ],
+  "live_meta": {
+    "verify_status": 1,
+    "login_status": 1,
+    "main_status": 1,
+    "change_scene_status": 1,
+    "change_scene_id": 1
+  }
+}
