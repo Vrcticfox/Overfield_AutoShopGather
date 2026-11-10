@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "npcs": [
     {
       "npc_name": "아즈사",
@@ -8,18 +8,18 @@
         {
           "grid_id": 1,
           "pool_id": 2100001,
-          "pool_index": 203,
-          "item_id": 5013016,
-          "item_name": "버섯 구이",
-          "nyang_coin_reward": 300
+          "pool_index": 100,
+          "item_id": 5013007,
+          "item_name": "간장 계란밥",
+          "nyang_coin_reward": 200
         },
         {
           "grid_id": 2,
           "pool_id": 2100003,
-          "pool_index": 200,
-          "item_id": 5012001,
-          "item_name": "식초",
-          "nyang_coin_reward": 200
+          "pool_index": 302,
+          "item_id": 5012003,
+          "item_name": "면",
+          "nyang_coin_reward": 350
         }
       ]
     },
@@ -30,26 +30,26 @@
         {
           "grid_id": 1,
           "pool_id": 2100002,
-          "pool_index": 361,
-          "item_id": 5013069,
-          "item_name": "아귀찜",
-          "nyang_coin_reward": 800
+          "pool_index": 256,
+          "item_id": 5013064,
+          "item_name": "참치 초밥",
+          "nyang_coin_reward": 600
         },
         {
           "grid_id": 2,
           "pool_id": 2100002,
-          "pool_index": 160,
-          "item_id": 5013068,
-          "item_name": "마라 생선볶음",
-          "nyang_coin_reward": 350
+          "pool_index": 215,
+          "item_id": 5013020,
+          "item_name": "매콤 붕어 조림",
+          "nyang_coin_reward": 600
         },
         {
           "grid_id": 3,
           "pool_id": 2100002,
-          "pool_index": 346,
-          "item_id": 5013054,
-          "item_name": "크림 홍합 오븐구이",
-          "nyang_coin_reward": 800
+          "pool_index": 144,
+          "item_id": 5013052,
+          "item_name": "매콤 대구볶음",
+          "nyang_coin_reward": 350
         }
       ]
     },
@@ -76,10 +76,10 @@
         {
           "grid_id": 3,
           "pool_id": 2200001,
-          "pool_index": 303,
-          "item_id": 5033004,
-          "item_name": "안경 샘플",
-          "nyang_coin_reward": 1000
+          "pool_index": 207,
+          "item_id": 5033008,
+          "item_name": "초커 샘플",
+          "nyang_coin_reward": 800
         }
       ]
     }
