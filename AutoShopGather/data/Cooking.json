@@ -1,0 +1,6170 @@
+{
+  "cook_level": {
+    "datas": [
+      {
+        "i_d": 1,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 1000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110101,
+            "proficiency": 200,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110102,
+            "proficiency": 200,
+            "complete_limit": 10
+          },
+          {
+            "achieve_condition_i_d": 100110103,
+            "proficiency": 300,
+            "complete_limit": 15
+          },
+          {
+            "achieve_condition_i_d": 100110104,
+            "proficiency": 300,
+            "complete_limit": 15
+          }
+        ]
+      },
+      {
+        "i_d": 2,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 2000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110201,
+            "proficiency": 200,
+            "complete_limit": 15
+          },
+          {
+            "achieve_condition_i_d": 100110202,
+            "proficiency": 100,
+            "complete_limit": 10
+          },
+          {
+            "achieve_condition_i_d": 100110203,
+            "proficiency": 300,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110204,
+            "proficiency": 300,
+            "complete_limit": 20
+          }
+        ]
+      },
+      {
+        "i_d": 3,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 3000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110301,
+            "proficiency": 100,
+            "complete_limit": 10
+          },
+          {
+            "achieve_condition_i_d": 100110302,
+            "proficiency": 600,
+            "complete_limit": 5
+          },
+          {
+            "achieve_condition_i_d": 100110303,
+            "proficiency": 300,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110304,
+            "proficiency": 300,
+            "complete_limit": 20
+          }
+        ]
+      },
+      {
+        "i_d": 4,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 5000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110401,
+            "proficiency": 100,
+            "complete_limit": 10
+          },
+          {
+            "achieve_condition_i_d": 100110402,
+            "proficiency": 100,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110403,
+            "proficiency": 100,
+            "complete_limit": 30
+          },
+          {
+            "achieve_condition_i_d": 100110404,
+            "proficiency": 200,
+            "complete_limit": 30
+          },
+          {
+            "achieve_condition_i_d": 100110405,
+            "proficiency": 200,
+            "complete_limit": 30
+          }
+        ]
+      },
+      {
+        "i_d": 5,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 8000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110501,
+            "proficiency": 200,
+            "complete_limit": 15
+          },
+          {
+            "achieve_condition_i_d": 100110502,
+            "proficiency": 150,
+            "complete_limit": 10
+          },
+          {
+            "achieve_condition_i_d": 100110503,
+            "proficiency": 250,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110504,
+            "proficiency": 250,
+            "complete_limit": 20
+          }
+        ]
+      },
+      {
+        "i_d": 6,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 10000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110601,
+            "proficiency": 100,
+            "complete_limit": 10
+          },
+          {
+            "achieve_condition_i_d": 100110602,
+            "proficiency": 600,
+            "complete_limit": 5
+          },
+          {
+            "achieve_condition_i_d": 100110603,
+            "proficiency": 250,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110604,
+            "proficiency": 250,
+            "complete_limit": 20
+          }
+        ]
+      },
+      {
+        "i_d": 7,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 15000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110701,
+            "proficiency": 100,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110702,
+            "proficiency": 100,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110703,
+            "proficiency": 100,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110704,
+            "proficiency": 100,
+            "complete_limit": 30
+          },
+          {
+            "achieve_condition_i_d": 100110705,
+            "proficiency": 100,
+            "complete_limit": 30
+          }
+        ]
+      },
+      {
+        "i_d": 8,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 20000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110801,
+            "proficiency": 200,
+            "complete_limit": 15
+          },
+          {
+            "achieve_condition_i_d": 100110802,
+            "proficiency": 200,
+            "complete_limit": 15
+          },
+          {
+            "achieve_condition_i_d": 100110803,
+            "proficiency": 200,
+            "complete_limit": 15
+          },
+          {
+            "achieve_condition_i_d": 100110804,
+            "proficiency": 200,
+            "complete_limit": 15
+          }
+        ]
+      },
+      {
+        "i_d": 9,
+        "upgrade_level_by_proficiency": 10000,
+        "need_item_i_d": 101,
+        "need_item_count": 30000,
+        "cook_level_quest": [
+          {
+            "achieve_condition_i_d": 100110901,
+            "proficiency": 400,
+            "complete_limit": 5
+          },
+          {
+            "achieve_condition_i_d": 100110902,
+            "proficiency": 100,
+            "complete_limit": 40
+          },
+          {
+            "achieve_condition_i_d": 100110903,
+            "proficiency": 100,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110904,
+            "proficiency": 100,
+            "complete_limit": 20
+          },
+          {
+            "achieve_condition_i_d": 100110905,
+            "proficiency": 100,
+            "complete_limit": 20
+          }
+        ]
+      },
+      {
+        "i_d": 10,
+        "upgrade_level_by_proficiency": 10000
+      }
+    ]
+  },
+  "cook_food": {
+    "datas": [
+      {
+        "i_d": 5012001,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011004,
+            "food_item_count": 2
+          }
+        ],
+        "successful_probability": 0.9,
+        "get_item_i_d": 5012001,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120011,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150120012,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150120013,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150120014,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012002,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011003,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.92,
+        "get_item_i_d": 5012002,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120021,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150120022,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150120023,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150120024,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012003,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011003,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.85,
+        "get_item_i_d": 5012003,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120031,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150120032,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150120033,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150120034,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012004,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.86,
+        "get_item_i_d": 5012004,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120041,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150120042,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150120043,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150120044,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012005,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011002,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011003,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.88,
+        "get_item_i_d": 5012005,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120051,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150120052,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150120053,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150120054,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012006,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011009,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011013,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.94,
+        "get_item_i_d": 5012006,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120061,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150120062,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150120063,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150120064,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012007,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011011,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.9,
+        "get_item_i_d": 5012007,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120071,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150120072,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150120073,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150120074,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012008,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011011,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.85,
+        "get_item_i_d": 5012008,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120081,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150120082,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150120083,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150120084,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5012009,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011007,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.95,
+        "get_item_i_d": 5012009,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120091,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150120092,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150120093,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150120094,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5012010,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011005,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 2
+          }
+        ],
+        "successful_probability": 0.86,
+        "get_item_i_d": 5012010,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120101,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150120102,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150120103,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150120104,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5012011,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 4,
+        "need_item_i_d": 11,
+        "need_item_count": 3,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011004,
+            "food_item_count": 1
+          }
+        ],
+        "successful_probability": 0.93,
+        "get_item_i_d": 5012011,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150120111,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150120112,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150120113,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150120114,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 1,
+        "new_cook_food_type": 1,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013007,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5012011,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.8,
+        "get_item_i_d": 5013007,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130071,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130072,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130073,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130074,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013012,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011010,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011013,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5012002,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.85,
+        "get_item_i_d": 5013012,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130121,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130122,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130123,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130124,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013014,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011005,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011006,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011022,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.8,
+        "get_item_i_d": 5013014,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130141,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130142,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130143,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130144,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013016,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011022,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011008,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.75,
+        "get_item_i_d": 5013016,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130161,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130162,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130163,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130164,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013019,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5012011,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012009,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.78,
+        "get_item_i_d": 5013019,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130191,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130192,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130193,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130194,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013023,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011005,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 2
+          }
+        ],
+        "successful_probability": 0.8,
+        "get_item_i_d": 5013023,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130231,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130232,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130233,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130234,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013026,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011006,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011022,
+            "food_item_count": 2
+          }
+        ],
+        "successful_probability": 0.94,
+        "get_item_i_d": 5013026,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130261,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130262,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130263,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130264,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013034,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 10,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5012002,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.8,
+        "get_item_i_d": 5013034,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130341,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130342,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130343,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130344,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013001,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023041,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012001,
+            "food_item_count": 4
+          }
+        ],
+        "successful_probability": 0.7,
+        "get_item_i_d": 5013001,
+        "need_formula_item_i_d": 5023041,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130011,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130012,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130013,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130014,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013002,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023002,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.71,
+        "get_item_i_d": 5013002,
+        "need_formula_item_i_d": 5023002,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130021,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130022,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130023,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130024,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013003,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023001,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.78,
+        "get_item_i_d": 5013003,
+        "need_formula_item_i_d": 5023001,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130031,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130032,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130033,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130034,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013004,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023003,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.81,
+        "get_item_i_d": 5013004,
+        "need_formula_item_i_d": 5023003,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130041,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130042,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130043,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130044,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013005,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023004,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.73,
+        "get_item_i_d": 5013005,
+        "need_formula_item_i_d": 5023004,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130051,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130052,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130053,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130054,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013006,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023042,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012003,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013006,
+        "need_formula_item_i_d": 5023042,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130061,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130062,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130063,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130064,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013008,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023005,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.83,
+        "get_item_i_d": 5013008,
+        "need_formula_item_i_d": 5023005,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130081,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130082,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130083,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130084,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013009,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023004,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.7,
+        "get_item_i_d": 5013009,
+        "need_formula_item_i_d": 5023004,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130091,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130092,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130093,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130094,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013010,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023006,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012001,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011013,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.84,
+        "get_item_i_d": 5013010,
+        "need_formula_item_i_d": 5023006,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130101,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130102,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130103,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130104,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013011,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023007,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.84,
+        "get_item_i_d": 5013011,
+        "need_formula_item_i_d": 5023007,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130111,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130112,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130113,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130114,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013013,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023008,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012002,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 7
+          }
+        ],
+        "successful_probability": 0.69,
+        "get_item_i_d": 5013013,
+        "need_formula_item_i_d": 5023008,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130131,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130132,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130133,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130134,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013015,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023043,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 9
+          }
+        ],
+        "successful_probability": 0.82,
+        "get_item_i_d": 5013015,
+        "need_formula_item_i_d": 5023043,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130151,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130152,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130153,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130154,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013017,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023009,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 7
+          }
+        ],
+        "successful_probability": 0.76,
+        "get_item_i_d": 5013017,
+        "need_formula_item_i_d": 5023009,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130171,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130172,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130173,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130174,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013018,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023010,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.79,
+        "get_item_i_d": 5013018,
+        "need_formula_item_i_d": 5023010,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130181,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130182,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130183,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130184,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013020,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023011,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5012008,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.67,
+        "get_item_i_d": 5013020,
+        "need_formula_item_i_d": 5023011,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130201,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130202,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130203,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130204,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013021,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023012,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.66,
+        "get_item_i_d": 5013021,
+        "need_formula_item_i_d": 5023012,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130211,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130212,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130213,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130214,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013022,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023007,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 7
+          }
+        ],
+        "successful_probability": 0.82,
+        "get_item_i_d": 5013022,
+        "need_formula_item_i_d": 5023007,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130221,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130222,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130223,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130224,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013024,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023045,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 9
+          }
+        ],
+        "successful_probability": 0.81,
+        "get_item_i_d": 5013024,
+        "need_formula_item_i_d": 5023045,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130241,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130242,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130243,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130244,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013025,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023006,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5023007,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5023011,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.74,
+        "get_item_i_d": 5013025,
+        "need_formula_item_i_d": 5023006,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130251,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130252,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130253,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130254,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013027,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023014,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.84,
+        "get_item_i_d": 5013027,
+        "need_formula_item_i_d": 5023014,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130271,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130272,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130273,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130274,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013028,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023015,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012011,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.73,
+        "get_item_i_d": 5013028,
+        "need_formula_item_i_d": 5023015,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130281,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130282,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130283,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130284,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013029,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023016,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.73,
+        "get_item_i_d": 5013029,
+        "need_formula_item_i_d": 5023016,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130291,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130292,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130293,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130294,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013030,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023046,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011006,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.67,
+        "get_item_i_d": 5013030,
+        "need_formula_item_i_d": 5023046,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130301,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130302,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130303,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130304,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013031,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023047,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013031,
+        "need_formula_item_i_d": 5023047,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130311,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130312,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130313,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130314,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013032,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023017,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5012004,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.84,
+        "get_item_i_d": 5013032,
+        "need_formula_item_i_d": 5023017,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130321,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130322,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130323,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130324,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013033,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023016,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.67,
+        "get_item_i_d": 5013033,
+        "need_formula_item_i_d": 5023016,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130331,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130332,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130333,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130334,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013035,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023043,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012011,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5023049,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.82,
+        "get_item_i_d": 5013035,
+        "need_formula_item_i_d": 5023043,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130351,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130352,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130353,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130354,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013036,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023018,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012011,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.76,
+        "get_item_i_d": 5013036,
+        "need_formula_item_i_d": 5023018,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130361,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130362,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130363,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130364,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013037,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5012003,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5023007,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5023016,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5023046,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 0.66,
+        "get_item_i_d": 5013037,
+        "need_formula_item_i_d": 5012003,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130371,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130372,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130373,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130374,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013038,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023019,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.72,
+        "get_item_i_d": 5013038,
+        "need_formula_item_i_d": 5023019,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130381,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130382,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130383,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130384,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013039,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023020,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.83,
+        "get_item_i_d": 5013039,
+        "need_formula_item_i_d": 5023020,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130391,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130392,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130393,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130394,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013040,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023021,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012004,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5022002,
+            "food_item_count": 7
+          }
+        ],
+        "successful_probability": 0.7,
+        "get_item_i_d": 5013040,
+        "need_formula_item_i_d": 5023021,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130401,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130402,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130403,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130404,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013041,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023013,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5022002,
+            "food_item_count": 2
+          }
+        ],
+        "successful_probability": 0.76,
+        "get_item_i_d": 5013041,
+        "need_formula_item_i_d": 5023013,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130411,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130412,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130413,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130414,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013042,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023023,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 11
+          },
+          {
+            "food_item_i_d": 5012004,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.83,
+        "get_item_i_d": 5013042,
+        "need_formula_item_i_d": 5023023,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130421,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130422,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130423,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130424,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013043,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023046,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012002,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.69,
+        "get_item_i_d": 5013043,
+        "need_formula_item_i_d": 5023046,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130431,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130432,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130433,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130434,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013044,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023003,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5023007,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5023006,
+            "food_item_count": 4
+          }
+        ],
+        "successful_probability": 0.81,
+        "get_item_i_d": 5013044,
+        "need_formula_item_i_d": 5023003,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130441,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130442,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130443,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130444,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013045,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023021,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.71,
+        "get_item_i_d": 5013045,
+        "need_formula_item_i_d": 5023021,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130451,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130452,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130453,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130454,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013046,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023022,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012008,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013046,
+        "need_formula_item_i_d": 5023022,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130461,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130462,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130463,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130464,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013047,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023049,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5012002,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012004,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013047,
+        "need_formula_item_i_d": 5023049,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130471,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130472,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130473,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130474,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013048,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023024,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 11
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.75,
+        "get_item_i_d": 5013048,
+        "need_formula_item_i_d": 5023024,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130481,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130482,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130483,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130484,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013049,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023032,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5023036,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011015,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011021,
+            "food_item_count": 7
+          }
+        ],
+        "successful_probability": 0.68,
+        "get_item_i_d": 5013049,
+        "need_formula_item_i_d": 5023032,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130491,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130492,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130493,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130494,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013050,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023025,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.66,
+        "get_item_i_d": 5013050,
+        "need_formula_item_i_d": 5023025,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130501,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130502,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130503,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130504,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013051,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023051,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011021,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011022,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.82,
+        "get_item_i_d": 5013051,
+        "need_formula_item_i_d": 5023051,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130511,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130512,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130513,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130514,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013052,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023026,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013052,
+        "need_formula_item_i_d": 5023026,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130521,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130522,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130523,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130524,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013053,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023050,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5023055,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5023036,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5012011,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5012008,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.84,
+        "get_item_i_d": 5013053,
+        "need_formula_item_i_d": 5023050,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130531,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130532,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130533,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130534,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013054,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023048,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011021,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5012004,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 7
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013054,
+        "need_formula_item_i_d": 5023048,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130541,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130542,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130543,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130544,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013055,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023027,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.68,
+        "get_item_i_d": 5013055,
+        "need_formula_item_i_d": 5023027,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130551,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130552,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130553,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130554,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013056,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023028,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011017,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 9
+          }
+        ],
+        "successful_probability": 0.74,
+        "get_item_i_d": 5013056,
+        "need_formula_item_i_d": 5023028,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130561,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130562,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130563,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130564,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013057,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023052,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5023041,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5012008,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5012001,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.84,
+        "get_item_i_d": 5013057,
+        "need_formula_item_i_d": 5023052,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130571,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130572,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130573,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130574,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013058,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023029,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.7,
+        "get_item_i_d": 5013058,
+        "need_formula_item_i_d": 5023029,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130581,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130582,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130583,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130584,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013059,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023032,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 7
+          }
+        ],
+        "successful_probability": 0.72,
+        "get_item_i_d": 5013059,
+        "need_formula_item_i_d": 5023032,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130591,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130592,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130593,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130594,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013060,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023053,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5012002,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5012004,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011021,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.76,
+        "get_item_i_d": 5013060,
+        "need_formula_item_i_d": 5023053,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130601,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130602,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130603,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130604,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013061,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5012010,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5023022,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5023013,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011010,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013061,
+        "need_formula_item_i_d": 5012010,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130611,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130612,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130613,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130614,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013062,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023030,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.78,
+        "get_item_i_d": 5013062,
+        "need_formula_item_i_d": 5023030,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130621,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130622,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130623,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130624,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013063,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023031,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.71,
+        "get_item_i_d": 5013063,
+        "need_formula_item_i_d": 5023031,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130631,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130632,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130633,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130634,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013064,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023036,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5012008,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5012001,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 2
+          },
+          {
+            "food_item_i_d": 5023041,
+            "food_item_count": 11
+          }
+        ],
+        "successful_probability": 0.84,
+        "get_item_i_d": 5013064,
+        "need_formula_item_i_d": 5023036,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130641,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130642,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130643,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130644,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013065,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5023046,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5023036,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5023032,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.81,
+        "get_item_i_d": 5013065,
+        "need_formula_item_i_d": 5011016,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130651,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130652,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130653,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130654,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013066,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023033,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5012001,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.65,
+        "get_item_i_d": 5013066,
+        "need_formula_item_i_d": 5023033,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130661,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130662,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130663,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130664,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013067,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023054,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5023053,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5023050,
+            "food_item_count": 11
+          },
+          {
+            "food_item_i_d": 5023051,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5023055,
+            "food_item_count": 6
+          }
+        ],
+        "successful_probability": 0.71,
+        "get_item_i_d": 5013067,
+        "need_formula_item_i_d": 5023054,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130671,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130672,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130673,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130674,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013068,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5011008,
+            "food_item_count": 4
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5023020,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.74,
+        "get_item_i_d": 5013068,
+        "need_formula_item_i_d": 5011008,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130681,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130682,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130683,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130684,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013069,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023034,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 5011020,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011019,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5012005,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011013,
+            "food_item_count": 5
+          }
+        ],
+        "successful_probability": 0.71,
+        "get_item_i_d": 5013069,
+        "need_formula_item_i_d": 5023034,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130691,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130692,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130693,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130694,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013070,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023035,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5012001,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011013,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.66,
+        "get_item_i_d": 5013070,
+        "need_formula_item_i_d": 5023035,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130701,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130702,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130703,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130704,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013071,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023055,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5012002,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 12
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.66,
+        "get_item_i_d": 5013071,
+        "need_formula_item_i_d": 5023055,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130711,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130712,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130713,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130714,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013072,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023037,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011006,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.81,
+        "get_item_i_d": 5013072,
+        "need_formula_item_i_d": 5023037,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130721,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130722,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130723,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130724,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 2,
+        "new_cook_tool_type": 1
+      },
+      {
+        "i_d": 5013073,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023049,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5023053,
+            "food_item_count": 9
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5012004,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.8,
+        "get_item_i_d": 5013073,
+        "need_formula_item_i_d": 5023049,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130731,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130732,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130733,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130734,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 3,
+        "new_cook_tool_type": 2
+      },
+      {
+        "i_d": 5013074,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023038,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011016,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011012,
+            "food_item_count": 8
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 12
+          }
+        ],
+        "successful_probability": 0.77,
+        "get_item_i_d": 5013074,
+        "need_formula_item_i_d": 5023038,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130741,
+            "reward_i_d": 10210
+          },
+          {
+            "achieve_condition_i_d": 150130742,
+            "reward_i_d": 10220
+          },
+          {
+            "achieve_condition_i_d": 150130743,
+            "reward_i_d": 10230
+          },
+          {
+            "achieve_condition_i_d": 150130744,
+            "reward_i_d": 10240
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013075,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023039,
+            "food_item_count": 6
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011018,
+            "food_item_count": 11
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 10
+          }
+        ],
+        "successful_probability": 0.66,
+        "get_item_i_d": 5013075,
+        "need_formula_item_i_d": 5023039,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130751,
+            "reward_i_d": 10310
+          },
+          {
+            "achieve_condition_i_d": 150130752,
+            "reward_i_d": 10320
+          },
+          {
+            "achieve_condition_i_d": 150130753,
+            "reward_i_d": 10330
+          },
+          {
+            "achieve_condition_i_d": 150130754,
+            "reward_i_d": 10340
+          }
+        ],
+        "new_cook_page_type": 5,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 5013076,
+        "is_show": true,
+        "is_handbook_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "need_item_i_d": 11,
+        "need_item_count": 30,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 5023040,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 5011014,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5011001,
+            "food_item_count": 10
+          },
+          {
+            "food_item_i_d": 5012006,
+            "food_item_count": 8
+          }
+        ],
+        "successful_probability": 0.81,
+        "get_item_i_d": 5013076,
+        "need_formula_item_i_d": 5023040,
+        "cook_food_quest_rewards": [
+          {
+            "achieve_condition_i_d": 150130761,
+            "reward_i_d": 10110
+          },
+          {
+            "achieve_condition_i_d": 150130762,
+            "reward_i_d": 10120
+          },
+          {
+            "achieve_condition_i_d": 150130763,
+            "reward_i_d": 10130
+          },
+          {
+            "achieve_condition_i_d": 150130764,
+            "reward_i_d": 10140
+          }
+        ],
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 6029,
+        "is_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "opening_time": "2026-01-07 23:59:59",
+        "closing_time": "2026-01-21 23:59:59",
+        "need_item_i_d": 11,
+        "need_item_count": 1,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 6026,
+            "food_item_count": 1
+          },
+          {
+            "food_item_i_d": 6027,
+            "food_item_count": 5
+          },
+          {
+            "food_item_i_d": 6028,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 1.0,
+        "get_item_i_d": 6029,
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      },
+      {
+        "i_d": 6043,
+        "is_show": true,
+        "cook_level": 1,
+        "need_time": 5,
+        "opening_time": "2026-02-26 00:00:00",
+        "closing_time": "2026-03-11 23:59:59",
+        "need_item_i_d": 11,
+        "need_item_count": 1,
+        "cook_food_items": [
+          {
+            "food_item_i_d": 6041,
+            "food_item_count": 3
+          },
+          {
+            "food_item_i_d": 6042,
+            "food_item_count": 7
+          },
+          {
+            "food_item_i_d": 5011013,
+            "food_item_count": 3
+          }
+        ],
+        "successful_probability": 1.0,
+        "get_item_i_d": 6043,
+        "new_cook_page_type": 4,
+        "new_cook_tool_type": 3
+      }
+    ]
+  },
+  "cook_affect": {
+    "datas": [
+      {
+        "i_d": 5013000,
+        "food_effect_type_param": 60,
+        "buff_i_d": 5013000,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013001,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013001,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013002,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013002,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013003,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013003,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013004,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013004,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013005,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013005,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013006,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013006,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013007,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013007,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013008,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013008,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013009,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013009,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013010,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013010,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013011,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013011,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013012,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013012,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013013,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013013,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013014,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013014,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013015,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013015,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013016,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013016,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013017,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013017,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013018,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013018,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013019,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013019,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013020,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013020,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013021,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013021,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013022,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013022,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013023,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013023,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013024,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013024,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013025,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013025,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013026,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013026,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013027,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013027,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013028,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013028,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013029,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013029,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013030,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013030,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013031,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013031,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013032,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013032,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013033,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013033,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013034,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013034,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013035,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013035,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013036,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013036,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013037,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013037,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013038,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013038,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013039,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013039,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013040,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013040,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013041,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013041,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013042,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013042,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013043,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013043,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013044,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013044,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013045,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013045,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013046,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013046,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013047,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013047,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013048,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013048,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013049,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013049,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013050,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013050,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013051,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013051,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013052,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013052,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013053,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013053,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013054,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013054,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013055,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013055,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013056,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013056,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013057,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013057,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013058,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013058,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013059,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013059,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013060,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013060,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013061,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013061,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013062,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013062,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013063,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013063,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013064,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013064,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013065,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013065,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013066,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013066,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013067,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013067,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013068,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013068,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013069,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013069,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013070,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013070,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013071,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013071,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013072,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013072,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013073,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013073,
+        "new_cook_food_affect_type": 2,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013074,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013074,
+        "new_cook_food_affect_type": 3,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013075,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013075,
+        "new_cook_food_affect_type": 5,
+        "new_cook_food_effect_type": 1
+      },
+      {
+        "i_d": 5013076,
+        "food_effect_type_param": 900,
+        "buff_i_d": 5013076,
+        "new_cook_food_affect_type": 1,
+        "new_cook_food_effect_type": 1
+      }
+    ]
+  },
+  "cook_spell": {
+    "datas": [
+      {
+        "i_d": 30100,
+        "cook_spell_items": [
+          {
+            "level": 1,
+            "icon_i_d": 31100,
+            "text_i_d": 30101,
+            "spell_param1": 0.01,
+            "need_cook_level": 1,
+            "need_time": 1800,
+            "need_currency_i_d": 101,
+            "need_currency_count": 1000
+          },
+          {
+            "level": 2,
+            "icon_i_d": 31100,
+            "text_i_d": 30102,
+            "spell_param1": 0.02,
+            "need_cook_level": 2,
+            "need_time": 3600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 2000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon_i_d": 31100,
+            "text_i_d": 30103,
+            "spell_param1": 0.03,
+            "need_cook_level": 3,
+            "need_time": 7200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 3000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "icon_i_d": 31100,
+            "text_i_d": 30104,
+            "spell_param1": 0.04,
+            "need_cook_level": 4,
+            "need_time": 14400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 5000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "icon_i_d": 31100,
+            "text_i_d": 30105,
+            "spell_param1": 0.05,
+            "need_cook_level": 5,
+            "need_time": 21600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 10000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "icon_i_d": 31100,
+            "text_i_d": 30106,
+            "spell_param1": 0.06,
+            "need_cook_level": 6,
+            "need_time": 32400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 15000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "icon_i_d": 31100,
+            "text_i_d": 30107,
+            "spell_param1": 0.07,
+            "need_cook_level": 7,
+            "need_time": 43200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 20000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "icon_i_d": 31100,
+            "text_i_d": 30108,
+            "spell_param1": 0.08,
+            "need_cook_level": 8,
+            "need_time": 86400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 25000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 9,
+            "icon_i_d": 31100,
+            "text_i_d": 30109,
+            "spell_param1": 0.09,
+            "need_cook_level": 9,
+            "need_time": 129600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 30000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "icon_i_d": 31100,
+            "text_i_d": 30110,
+            "spell_param1": 0.1,
+            "need_cook_level": 10,
+            "need_time": 259200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 50000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "i_d": 30200,
+        "cook_spell_items": [
+          {
+            "level": 1,
+            "icon_i_d": 31200,
+            "text_i_d": 30201,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.01,
+            "need_cook_level": 1,
+            "need_time": 1800,
+            "need_currency_i_d": 101,
+            "need_currency_count": 1000
+          },
+          {
+            "level": 2,
+            "icon_i_d": 31200,
+            "text_i_d": 30202,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.02,
+            "need_cook_level": 2,
+            "need_time": 3600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 2000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon_i_d": 31200,
+            "text_i_d": 30203,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.03,
+            "need_cook_level": 3,
+            "need_time": 7200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 3000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "icon_i_d": 31200,
+            "text_i_d": 30204,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.04,
+            "need_cook_level": 4,
+            "need_time": 14400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 5000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "icon_i_d": 31200,
+            "text_i_d": 30205,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.05,
+            "need_cook_level": 5,
+            "need_time": 21600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 10000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "icon_i_d": 31200,
+            "text_i_d": 30206,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.06,
+            "need_cook_level": 6,
+            "need_time": 32400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 15000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "icon_i_d": 31200,
+            "text_i_d": 30207,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.07,
+            "need_cook_level": 7,
+            "need_time": 43200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 20000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "icon_i_d": 31200,
+            "text_i_d": 30208,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.08,
+            "need_cook_level": 8,
+            "need_time": 86400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 25000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 9,
+            "icon_i_d": 31200,
+            "text_i_d": 30209,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.09,
+            "need_cook_level": 9,
+            "need_time": 129600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 30000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "icon_i_d": 31200,
+            "text_i_d": 30210,
+            "new_life_spell_effect_type": 1,
+            "spell_param1": 0.1,
+            "need_cook_level": 10,
+            "need_time": 259200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 50000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "i_d": 30300,
+        "cook_spell_items": [
+          {
+            "level": 1,
+            "icon_i_d": 31300,
+            "text_i_d": 30301,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.1,
+            "need_cook_level": 1,
+            "need_time": 1800,
+            "need_currency_i_d": 101,
+            "need_currency_count": 1000
+          },
+          {
+            "level": 2,
+            "icon_i_d": 31300,
+            "text_i_d": 30302,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.15,
+            "need_cook_level": 2,
+            "need_time": 3600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 2000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon_i_d": 31300,
+            "text_i_d": 30303,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.2,
+            "need_cook_level": 3,
+            "need_time": 7200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 3000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "icon_i_d": 31300,
+            "text_i_d": 30304,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.25,
+            "need_cook_level": 4,
+            "need_time": 14400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 5000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "icon_i_d": 31300,
+            "text_i_d": 30305,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.3,
+            "need_cook_level": 5,
+            "need_time": 21600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 10000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "icon_i_d": 31300,
+            "text_i_d": 30306,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.35,
+            "need_cook_level": 6,
+            "need_time": 32400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 15000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "icon_i_d": 31300,
+            "text_i_d": 30307,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.4,
+            "need_cook_level": 7,
+            "need_time": 43200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 20000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "icon_i_d": 31300,
+            "text_i_d": 30308,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.45,
+            "need_cook_level": 8,
+            "need_time": 86400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 25000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 9,
+            "icon_i_d": 31300,
+            "text_i_d": 30309,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.5,
+            "need_cook_level": 9,
+            "need_time": 129600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 30000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "icon_i_d": 31300,
+            "text_i_d": 30310,
+            "new_life_spell_effect_type": 2,
+            "spell_param1": 0.55,
+            "need_cook_level": 10,
+            "need_time": 259200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 50000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "i_d": 30400,
+        "cook_spell_items": [
+          {
+            "level": 1,
+            "icon_i_d": 31400,
+            "text_i_d": 30401,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.05,
+            "need_cook_level": 1,
+            "need_time": 1800,
+            "need_currency_i_d": 101,
+            "need_currency_count": 1000
+          },
+          {
+            "level": 2,
+            "icon_i_d": 31400,
+            "text_i_d": 30402,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.07,
+            "need_cook_level": 2,
+            "need_time": 3600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 2000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon_i_d": 31400,
+            "text_i_d": 30403,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.09,
+            "need_cook_level": 3,
+            "need_time": 7200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 3000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "icon_i_d": 31400,
+            "text_i_d": 30404,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.11,
+            "need_cook_level": 4,
+            "need_time": 14400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 5000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "icon_i_d": 31400,
+            "text_i_d": 30405,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.13,
+            "need_cook_level": 5,
+            "need_time": 21600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 10000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "icon_i_d": 31400,
+            "text_i_d": 30406,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.15,
+            "need_cook_level": 6,
+            "need_time": 32400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 15000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "icon_i_d": 31400,
+            "text_i_d": 30407,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.17,
+            "need_cook_level": 7,
+            "need_time": 43200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 20000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "icon_i_d": 31400,
+            "text_i_d": 30408,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.19,
+            "need_cook_level": 8,
+            "need_time": 86400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 25000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 9,
+            "icon_i_d": 31400,
+            "text_i_d": 30409,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.21,
+            "need_cook_level": 9,
+            "need_time": 129600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 30000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "icon_i_d": 31400,
+            "text_i_d": 30410,
+            "new_life_spell_effect_type": 3,
+            "spell_param1": 0.23,
+            "need_cook_level": 10,
+            "need_time": 259200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 50000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "i_d": 30500,
+        "cook_spell_items": [
+          {
+            "level": 1,
+            "icon_i_d": 31500,
+            "text_i_d": 30501,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.05,
+            "need_cook_level": 1,
+            "need_time": 1800,
+            "need_currency_i_d": 101,
+            "need_currency_count": 1000
+          },
+          {
+            "level": 2,
+            "icon_i_d": 31500,
+            "text_i_d": 30502,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.1,
+            "need_cook_level": 2,
+            "need_time": 3600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 2000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon_i_d": 31500,
+            "text_i_d": 30503,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.15,
+            "need_cook_level": 3,
+            "need_time": 7200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 3000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "icon_i_d": 31500,
+            "text_i_d": 30504,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.2,
+            "need_cook_level": 4,
+            "need_time": 14400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 5000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "icon_i_d": 31500,
+            "text_i_d": 30505,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.25,
+            "need_cook_level": 5,
+            "need_time": 21600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 10000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "icon_i_d": 31500,
+            "text_i_d": 30506,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.3,
+            "need_cook_level": 6,
+            "need_time": 32400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 15000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "icon_i_d": 31500,
+            "text_i_d": 30507,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.35,
+            "need_cook_level": 7,
+            "need_time": 43200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 20000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "icon_i_d": 31500,
+            "text_i_d": 30508,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.4,
+            "need_cook_level": 8,
+            "need_time": 86400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 25000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 9,
+            "icon_i_d": 31500,
+            "text_i_d": 30509,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.45,
+            "need_cook_level": 9,
+            "need_time": 129600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 30000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "icon_i_d": 31500,
+            "text_i_d": 30510,
+            "new_life_spell_effect_type": 4,
+            "spell_param1": 0.5,
+            "need_cook_level": 10,
+            "need_time": 259200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 50000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "i_d": 30600,
+        "cook_spell_items": [
+          {
+            "level": 1,
+            "icon_i_d": 31600,
+            "text_i_d": 30601,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.01,
+            "need_cook_level": 1,
+            "need_time": 1800,
+            "need_currency_i_d": 101,
+            "need_currency_count": 1000
+          },
+          {
+            "level": 2,
+            "icon_i_d": 31600,
+            "text_i_d": 30602,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.02,
+            "need_cook_level": 2,
+            "need_time": 3600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 2000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 3,
+            "icon_i_d": 31600,
+            "text_i_d": 30603,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.03,
+            "need_cook_level": 3,
+            "need_time": 7200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 3000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 4,
+            "icon_i_d": 31600,
+            "text_i_d": 30604,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.04,
+            "need_cook_level": 4,
+            "need_time": 14400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 5000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000004,
+                "need_item_count": 3
+              }
+            ]
+          },
+          {
+            "level": 5,
+            "icon_i_d": 31600,
+            "text_i_d": 30605,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.05,
+            "need_cook_level": 5,
+            "need_time": 21600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 10000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 6,
+            "icon_i_d": 31600,
+            "text_i_d": 30606,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.06,
+            "need_cook_level": 6,
+            "need_time": 32400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 15000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 7,
+            "icon_i_d": 31600,
+            "text_i_d": 30607,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.07,
+            "need_cook_level": 7,
+            "need_time": 43200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 20000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000005,
+                "need_item_count": 6
+              }
+            ]
+          },
+          {
+            "level": 8,
+            "icon_i_d": 31600,
+            "text_i_d": 30608,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.08,
+            "need_cook_level": 8,
+            "need_time": 86400,
+            "need_currency_i_d": 101,
+            "need_currency_count": 25000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 9,
+            "icon_i_d": 31600,
+            "text_i_d": 30609,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.09,
+            "need_cook_level": 9,
+            "need_time": 129600,
+            "need_currency_i_d": 101,
+            "need_currency_count": 30000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          },
+          {
+            "level": 10,
+            "icon_i_d": 31600,
+            "text_i_d": 30610,
+            "new_life_spell_effect_type": 5,
+            "spell_param1": 0.1,
+            "need_cook_level": 10,
+            "need_time": 259200,
+            "need_currency_i_d": 101,
+            "need_currency_count": 50000,
+            "cook_need_item": [
+              {
+                "need_item_i_d": 5000006,
+                "need_item_count": 9
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

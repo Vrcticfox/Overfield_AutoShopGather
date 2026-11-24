@@ -29,7 +29,8 @@ from AutoShopGather.live_daily_job_probe import (
     parse_int,
 )
 
-RESOURCES_DIR = VENDOR_ROOT / "resources" / "data"
+# Static tables from the of-ps v2.2 release.
+RESOURCES_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_PATH = REPO_ROOT / "AutoShopGather" / "output" / "live_daily_jobs.json"
 KST = ZoneInfo("Asia/Seoul")
 

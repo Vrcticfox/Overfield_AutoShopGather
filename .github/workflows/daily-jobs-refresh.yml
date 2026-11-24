@@ -68,20 +68,6 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install protobuf python-snappy grpcio-tools pynacl
 
-      - name: Download game resource data
-        run: |
-          curl -L "https://github.com/byzp/of-ps/releases/latest/download/resources.zip" -o /tmp/of-ps-resources.zip
-          python - <<'PY'
-          from pathlib import Path
-          from zipfile import ZipFile
-
-          target = Path("of-ps/resources")
-          target.mkdir(parents=True, exist_ok=True)
-          with ZipFile("/tmp/of-ps-resources.zip") as zf:
-              zf.extractall(target)
-          print("Extracted resources.zip into", target)
-          PY
-
       - name: Generate protobuf modules
         run: |
           python -m grpc_tools.protoc -I of-ps/proto --python_out=of-ps/proto of-ps/proto/net.proto
